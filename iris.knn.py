@@ -20,10 +20,15 @@ print("y test shape: ", y_test.shape)
 k_range = list(range(1, 26))
 scores = []
 for k in k_range:
-    model = KNeighborsClassifier(n_neighbors=k)
-    model.fit(X_train, y_train)
-    y_predicted = model.predict(X_test)
+    knn = KNeighborsClassifier(n_neighbors=k)
+    knn.fit(X_train, y_train)
+    y_predicted = knn.predict(X_test)
     scores.append(metrics.accuracy_score(y_test, y_predicted))
+
+model = KNeighborsClassifier(n_neighbors=16)
+model.fit(X_train, y_train)
+y_predicted = model.predict(X_test)
+print("Highest [knn = 16] accuracy score: ", metrics.accuracy_score(y_test, y_predicted))
 
 plot.plot(k_range, scores)
 plot.xlabel('Value of K for KNN')
