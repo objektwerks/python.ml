@@ -13,4 +13,4 @@ model = GaussianNB()
 model.fit(X_train, y_train)
 y_predicted = model.predict(X_test)
 
-print(metrics.accuracy_score(y_test, y_predicted))
+print("Accuracy score: ", metrics.accuracy_score(y_test, y_predicted))
