@@ -5,6 +5,7 @@ from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn import metrics
+import matplotlib.pyplot as plot
 
 X, y = load_iris(return_X_y=True)
 print("X shape: ", X.shape)
@@ -16,8 +17,15 @@ print("X test shape: ", X_test.shape)
 print("y train shape: ", y_train.shape)
 print("y test shape: ", y_test.shape)
 
-model = KNeighborsClassifier(n_neighbors=5)
-model.fit(X_train, y_train)
-y_predicted = model.predict(X_test)
+k_range = list(range(1, 26))
+scores = []
+for k in k_range:
+    model = KNeighborsClassifier(n_neighbors=k)
+    model.fit(X_train, y_train)
+    y_predicted = model.predict(X_test)
+    scores.append(metrics.accuracy_score(y_test, y_predicted))
 
-print("Accuracy score: ", metrics.accuracy_score(y_test, y_predicted))
+plot.plot(k_range, scores)
+plot.xlabel('Value of K for KNN')
+plot.ylabel('Testing Accuracy')
+plot.show()
