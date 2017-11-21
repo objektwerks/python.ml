@@ -8,14 +8,11 @@ from sklearn import metrics
 import matplotlib.pyplot as plot
 
 X, y = load_iris(return_X_y=True)
-print("X shape: ", X.shape)
-print("y shape: ", y.shape)
+print("X shape / y shape: ", X.shape, y.shape)
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=3)
-print("X train shape: ", X_train.shape)
-print("X test shape: ", X_test.shape)
-print("y train shape: ", y_train.shape)
-print("y test shape: ", y_test.shape)
+print("X train / X test shape: ", X_train.shape, X_test.shape)
+print("y train / y test shape: ", y_train.shape, y_test.shape)
 
 k_range = list(range(1, 26))
 scores = []
