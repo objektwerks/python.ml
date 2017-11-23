@@ -32,7 +32,7 @@ model.fit(X_train, y_train)
 y_predicted = model.predict(X_test)
 print("Root Mean Squared Error (RMSE): ", np.sqrt(metrics.mean_squared_error(y_test, y_predicted)))
 print("Cross-validation mean RMSE: ", \
- np.sqrt(-cross_val_score(model, X, y, cv=10, scoring='neg_mean_squared_error')).mean())
+    np.sqrt(-cross_val_score(model, X, y, cv=10, scoring='neg_mean_squared_error')).mean())
 
 sb.pairplot(data, x_vars=['TV', 'Radio'], y_vars='Sales', size=7, aspect=0.7, kind='reg')
 plot.show()
