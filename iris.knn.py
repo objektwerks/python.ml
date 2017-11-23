@@ -2,7 +2,7 @@
 KNeighbors Classifier test on iris data.
 """
 from sklearn.datasets import load_iris
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn import metrics
 import matplotlib.pyplot as plot
@@ -26,6 +26,9 @@ model = KNeighborsClassifier(n_neighbors=16)
 model.fit(X_train, y_train)
 y_predicted = model.predict(X_test)
 print("Highest [knn = 16] accuracy score: ", metrics.accuracy_score(y_test, y_predicted))
+
+print("Cross-validation mean accuracy score: ", \
+ cross_val_score(model, X, y, cv=10, scoring='accuracy').mean())
 
 plot.plot(k_range, scores)
 plot.xlabel('Value of K for KNN')
