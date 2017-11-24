@@ -1,5 +1,5 @@
 """
-Pandas using Chipolte order data.
+Using Pandas to read data files.
 """
 import pandas as panda
 

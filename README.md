@@ -1,3 +1,3 @@
-Python Scikit-Learn
--------------------
-The purpose of this project is to prototype scikit-learn features.
+Python ML
+---------
+The purpose of this project is to prototype scikit-learn, pandas and other ML features.
