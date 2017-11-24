@@ -19,6 +19,7 @@ print("Occupations shape: ", occupations.shape)
 print("Occupations data:\n", occupations.sort_values('occupation').head(n=3))
 print("Occupation by age >= 30 and gender = M:\n", occupations[(occupations.age >= 30) \
     & (occupations.gender == 'M')].sort_values('occupation').head(n=3))
+print("Programmers:\n", occupations[occupations.occupation.isin(['programmer'])].head(n=3))
 
 ufos = panda.read_csv('./data/ufos.csv')
 assert ufos.City.size > 0
