@@ -7,6 +7,10 @@ ads = panda.read_csv('./data/ads.csv', index_col=0)
 print("Ads shape: ", ads.shape)
 print("Ads data:\n", ads.head(n=3))
 
+ufos = panda.read_csv('./data/ufos.csv', index_col=0)
+print("UFOs shape: ", ufos.shape)
+print("UFOs data:\n", ufos.head(n=3))
+
 orders = panda.read_table('./data/orders.tsv', index_col=0)
 print("Orders shape: ", orders.shape)
 print("Orders data:\n", orders.head(n=3))
