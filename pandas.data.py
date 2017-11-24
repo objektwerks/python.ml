@@ -3,7 +3,11 @@ Pandas to read features.
 """
 import pandas as panda
 
-orders = panda.read_table('./data/chipolte.tsv', index_col=0)
+ads = panda.read_csv('./data/ads.csv', index_col=0)
+print("Ads shape: ", ads.shape)
+print("Ads data:\n", ads.head(n=3))
+
+orders = panda.read_table('./data/orders.tsv', index_col=0)
 print("Orders shape: ", orders.shape)
 print("Orders data:\n", orders.head(n=3))
 

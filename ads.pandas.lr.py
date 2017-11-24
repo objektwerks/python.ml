@@ -9,7 +9,7 @@ import numpy as np
 import matplotlib.pyplot as plot
 import seaborn as sb
 
-dataframe = panda.read_csv('./data/ad.csv', index_col=0)
+dataframe = panda.read_csv('./data/ads.csv', index_col=0)
 print("Data shape: ", dataframe.shape)
 print("Data:\n", dataframe.head(n=3))
 
