@@ -1,5 +1,5 @@
 """
-Pandas to read features.
+Pandas read features.
 """
 import pandas as panda
 

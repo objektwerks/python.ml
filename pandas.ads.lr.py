@@ -1,5 +1,5 @@
 """
-Linear Regression using pandas against advertising data.
+Linear Regression using pandas and advertising data.
 """
 import pandas as panda
 from sklearn.model_selection import train_test_split, cross_val_score
