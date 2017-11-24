@@ -6,6 +6,7 @@ import pandas as panda
 ads = panda.read_csv('./data/ads.csv', index_col=0)
 print("Ads shape: ", ads.shape)
 print("Ads data:\n", ads.head(n=3))
+print("Ad sales > 20.0:\n", ads[ads.Sales > 20.0].sort_values('Sales', ascending=False).head(n=3))
 
 orders = panda.read_table('./data/orders.tsv', index_col=0)
 orders.drop(['choice_description'], axis=1, inplace=True)
