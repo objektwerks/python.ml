@@ -34,3 +34,7 @@ ufos.drop(['Color', 'State'], axis=1, inplace=True)
 ufos.drop([0, 1], axis=0, inplace=True)
 print("UFOs shape: ", ufos.shape)
 print("UFOs data:\n", ufos.sort_values('Location').head(n=3))
+
+drinks = panda.read_csv('./data/drinks.csv')
+print("Drinks shape: ", drinks.shape)
+print("Drinks litres:\n", drinks.sort_values('litres', ascending=False).head(n=3))
