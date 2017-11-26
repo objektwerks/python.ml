@@ -15,15 +15,13 @@ print("Orders shape: ", orders.shape)
 print("Orders data:\n", orders.sort_values('item_price', ascending=False).head(n=3))
 print("Orders average total:\n", orders.mean(axis='index'))
 
-occupation_cols = ['id', 'age', 'gender', 'occupation', 'zip']
-occupations = panda.read_table('./data/occupations.psv', sep='|', header=None, names=occupation_cols,\
-    index_col=0).dropna()
-print("Occupations shape: ", occupations.shape)
-print("Occupations data:\n", occupations.sort_values('occupation').head(n=3))
-print("Occupation by age >= 30 and gender = M:\n", occupations[(occupations.age >= 30) \
-    & (occupations.gender == 'M')].sort_values('occupation').head(n=3))
-print("Geeks:\n", occupations[occupations.occupation.isin(['programmer', 'technician'])].head(n=3))
-print("Occupations average age:\n", occupations.mean(axis='index'))
+job_cols = ['id', 'age', 'gender', 'job', 'zip']
+jobs = panda.read_table('./data/jobs.psv', sep='|', header=None, names=job_cols, index_col=0).dropna()
+print("Jobs shape: ", jobs.shape)
+print("Jobs data:\n", jobs.sort_values('job').head(n=3))
+print("Job by age >= 30 and gender = M:\n", jobs[(jobs.age >= 30) & (jobs.gender == 'M')].sort_values('job').head(n=3))
+print("Geeks:\n", jobs[jobs.job.isin(['programmer', 'technician'])].head(n=3))
+print("Jobs average age:\n", jobs.mean(axis='index'))
 
 ufos = panda.read_csv('./data/ufos.csv').dropna()
 ufos['Location'] = ufos.City + ', ' + ufos.State
