@@ -26,11 +26,8 @@ print("Geeks:\n", occupations[occupations.occupation.isin(['programmer', 'techni
 print("Occupations average age:\n", occupations.mean(axis='index'))
 
 ufos = panda.read_csv('./data/ufos.csv').dropna()
-assert ufos.City.size > 0
 ufos['Location'] = ufos.City + ', ' + ufos.State
-assert ufos.Location.size > 0
 ufos.rename(columns={'Time': 'Date_Time'}, inplace=True)
-assert ufos.Date_Time.size > 0
 ufos.drop(['Color', 'State'], axis=1, inplace=True)
 print("UFOs shape: ", ufos.shape)
 print("UFOs data:\n", ufos.sort_values('Location').head(n=3))
