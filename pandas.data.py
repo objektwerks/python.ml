@@ -23,6 +23,7 @@ print("Job by age >= 30 and gender = M:\n", jobs[(jobs.age >= 30) & (jobs.gender
     .sort_values('age', ascending=False).head(n=3))
 print("Geeks:\n", jobs[jobs.job.isin(['programmer', 'technician'])].head(n=3))
 print("Jobs average age:\n", jobs.mean(axis='index'))
+print("Jobs gender/job crosstab:\n", panda.crosstab(jobs.gender, jobs.job))
 
 ufos = panda.read_csv('./data/ufos.csv').dropna()
 ufos['Location'] = ufos.City + ', ' + ufos.State
