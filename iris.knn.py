@@ -32,8 +32,8 @@ model = KNeighborsClassifier(n_neighbors=16)
 model.fit(X_train, y_train)
 y_predicted = model.predict(X_test)
 print("Highest [knn=16] accuracy score: ", metrics.accuracy_score(y_test, y_predicted))
-print("Cross-validation mean accuracy score: ", \
-    cross_val_score(model, X, y, cv=10, scoring='accuracy').mean())
+print("Cross-validation mean accuracy score: ",
+      cross_val_score(model, X, y, cv=10, scoring='accuracy').mean())
 
 plot.plot(k_range, k_scores)
 plot.xlabel('Value of K for KNN')
