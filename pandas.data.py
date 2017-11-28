@@ -19,8 +19,8 @@ job_cols = ['id', 'age', 'gender', 'job', 'zip']
 jobs = panda.read_table('./data/jobs.psv', sep='|', header=None, names=job_cols, index_col=0).dropna()
 print("Jobs shape: ", jobs.shape)
 print("Jobs data:\n", jobs.sort_values('job').head(n=3))
-print("Job by age >= 30 and gender = M:\n", jobs[(jobs.age >= 30) & (jobs.gender == 'M')] \
-    .sort_values('age', ascending=False).head(n=3))
+print("Job by age >= 30 and gender = M:\n", jobs[(jobs.age >= 30) & (jobs.gender == 'M')]
+      .sort_values('age', ascending=False).head(n=3))
 print("Geeks:\n", jobs[jobs.job.isin(['programmer', 'technician'])].head(n=3))
 print("Jobs average age:\n", jobs.mean(axis='index'))
 print("Jobs gender/job crosstab:\n", panda.crosstab(jobs.gender, jobs.job))
