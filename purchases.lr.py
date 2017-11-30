@@ -4,7 +4,7 @@ Logistic Regression test on purchases data.
 import pandas as pd
 from sklearn.preprocessing import Imputer
 from sklearn.preprocessing import OneHotEncoder, LabelEncoder
-from sklearn.model_selection import train_test_split, cross_val_score
+from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 from sklearn import metrics
@@ -33,23 +33,17 @@ y = purchased_encoder.fit_transform(y)
 print("y purchased label encoder: ", y)
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
+print("X/y train-test split!")
 
 sc_X = StandardScaler()
 X_train = sc_X.fit_transform(X_train)
 X_test = sc_X.transform(X_test)
 
-sc_y = StandardScaler()
-y_train = sc_y.fit_transform(y_train)
-
 print("X shape / y shape: ", X.shape, y.shape)
 print("X train / X test shape: ", X_train.shape, X_test.shape)
 print("y train / y test shape: ", y_train.shape, y_test.shape)
-print("X: ", X)
-print("y: ", y)
 
 model = LogisticRegression()
 model.fit(X_train, y_train)
 y_predicted = model.predict(X_test)
 print("Accuracy score: ", metrics.accuracy_score(y_test, y_predicted))
-print("Cross-validation mean accuracy score: ",
-      cross_val_score(model, X, y, cv=10, scoring='accuracy').mean())
