@@ -6,6 +6,7 @@ from sklearn.preprocessing import Imputer
 from sklearn.preprocessing import OneHotEncoder, LabelEncoder
 from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.preprocessing import StandardScaler
+from sklearn.linear_model import LogisticRegression
 from sklearn import metrics
 
 df = pd.read_csv('./data/purchases.csv')
@@ -14,22 +15,22 @@ y = df.iloc[:, 3].values
 print("X: ", X)
 print("y: ", y)
 
-age_salary_nan = Imputer(missing_values = 'NaN', strategy = 'mean', axis = 0)
-age_salary_nan = age_salary_nan.fit(X[:, 1:3])
-X[:, 1:3] = age_salary_nan.transform(X[:, 1:3])
-print("X: ", X)
+age_salary_imputer = Imputer(missing_values = 'NaN', strategy = 'mean', axis = 0)
+age_salary_imputer = age_salary_imputer.fit(X[:, 1:3])
+X[:, 1:3] = age_salary_imputer.transform(X[:, 1:3])
+print("X age-salary imputer: ", X)
 
-country_label_encoder = LabelEncoder()
-X[:, 0] = country_label_encoder.fit_transform(X[:, 0])
-print("X: ", X)
+country_encoder = LabelEncoder()
+X[:, 0] = country_encoder.fit_transform(X[:, 0])
+print("X country label encoder: ", X)
 
 country_hot_encoder = OneHotEncoder(categorical_features = [0])
 X = country_hot_encoder.fit_transform(X).toarray()
-print("X: ", X)
+print("X country hot encoder: ", X)
 
 purchased_encoder = LabelEncoder()
 y = purchased_encoder.fit_transform(y)
-print("y: ", y)
+print("y purchased label encoder: ", y)
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
 
