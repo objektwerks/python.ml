@@ -12,10 +12,11 @@ df = pd.read_csv('./data/startups.csv')
 X = df.iloc[:, :-1].values
 y = df.iloc[:, 4].values
 
-labelencoder = LabelEncoder()
-X[:, 3] = labelencoder.fit_transform(X[:, 3])
-onehotencoder = OneHotEncoder(categorical_features = [3])
-X = onehotencoder.fit_transform(X).toarray()
+state_encoder = LabelEncoder()
+X[:, 3] = state_encoder.fit_transform(X[:, 3])
+
+state_hot_encoder = OneHotEncoder(categorical_features = [3])
+X = state_hot_encoder.fit_transform(X).toarray()
 
 X = X[:, 1:]
 
