@@ -7,7 +7,6 @@ from sklearn.preprocessing import OneHotEncoder, LabelEncoder
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
-from sklearn import metrics
 
 df = pd.read_csv('./data/purchases.csv')
 X = df.iloc[:, :-1].values
@@ -45,5 +44,4 @@ print("y train / y test shape: ", y_train.shape, y_test.shape)
 
 model = LogisticRegression()
 model.fit(X_train, y_train)
-y_predicted = model.predict(X_test)
-print("Accuracy score: ", metrics.accuracy_score(y_test, y_predicted))
+print("y predicted: ", model.predict(X_test))
