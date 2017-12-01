@@ -54,5 +54,6 @@ print("OLS Summary [0, 3, 4, 5]\n", model_OLS.summary())
 model_OLS = sm.OLS(endog = y, exog = X[:, [0, 3, 5]]).fit()
 print("OLS Summary [0, 3, 5]\n", model_OLS.summary())
 
+# R&D Spend is the best independent variable.
 model_OLS = sm.OLS(endog = y, exog = X[:, [0, 3]]).fit()
 print("OLS Summary [0, 3]\n", model_OLS.summary())
