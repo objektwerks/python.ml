@@ -24,27 +24,29 @@ print("X shape / y shape: ", X.shape, y.shape)
 print("X train / X test shape: ", X_train.shape, X_test.shape)
 print("y train / y test shape: ", y_train.shape, y_test.shape)
 
-regressor = LinearRegression()
-regressor.fit(X_train, y_train)
-y_pred = regressor.predict(X_test)
+model = LinearRegression()
+model.fit(X_train, y_train)
+y_predicted = model.predict(X_test)
+print("y predicted: ", y_predicted)
 
 X = np.append(arr = np.ones((50, 1)).astype(int), values = X, axis = 1)
+
 X_opt = X[:, [0, 1, 2, 3, 4, 5]]
-regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
-regressor_OLS.summary()
+model_OLS = sm.OLS(endog = y, exog = X_opt).fit()
+print("OLS [0, 1, 2, 3, 4, 5]\n", model_OLS.summary())
 
 X_opt = X[:, [0, 1, 3, 4, 5]]
-regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
-regressor_OLS.summary()
+model_OLS = sm.OLS(endog = y, exog = X_opt).fit()
+print("OLS [0, 1, 3, 4, 5]\n", model_OLS.summary())
 
 X_opt = X[:, [0, 3, 4, 5]]
-regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
-regressor_OLS.summary()
+model_OLS = sm.OLS(endog = y, exog = X_opt).fit()
+print("OLS [0, 3, 4, 5]\n", model_OLS.summary())
 
 X_opt = X[:, [0, 3, 5]]
-regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
-regressor_OLS.summary()
+model_OLS = sm.OLS(endog = y, exog = X_opt).fit()
+print("OLS [0, 3, 5]\n", model_OLS.summary())
 
 X_opt = X[:, [0, 3]]
-regressor_OLS = sm.OLS(endog = y, exog = X_opt).fit()
-regressor_OLS.summary()
+model_OLS = sm.OLS(endog = y, exog = X_opt).fit()
+print("OLS [0, 3]\n", model_OLS.summary())
