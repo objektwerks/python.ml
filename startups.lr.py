@@ -18,8 +18,8 @@ X[:, 3] = state_encoder.fit_transform(X[:, 3])
 state_hot_encoder = OneHotEncoder(categorical_features = [3])
 X = state_hot_encoder.fit_transform(X).toarray()
 
-# Remove dummy var to avoid dummy var trap!
-# Done for automatically by sklearn linear regression!
+# Remove [dummy vars - 1] to avoid dummy var trap.
+# Done automatically by sklearn linear regression.
 X = X[:, 1:]
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
