@@ -6,9 +6,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
 
-dataset = pd.read_csv('./data/salaries.csv')
-X = dataset.iloc[:, :-1].values
-y = dataset.iloc[:, 1].values
+df = pd.read_csv('./data/salaries.csv')
+X = df.iloc[:, :-1].values
+y = df.iloc[:, 1].values
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.3, random_state = 0)
 print("X shape / y shape: ", X.shape, y.shape)
 print("X train / X test shape: ", X_train.shape, X_test.shape)
