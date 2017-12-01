@@ -1,11 +1,12 @@
 """
 Linear Regression test on startups data.
 """
-import numpy as np
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
+import matplotlib.pyplot as plt
+import numpy as np
 import statsmodels.formula.api as sm
 
 df = pd.read_csv('./data/startups.csv')
@@ -30,7 +31,12 @@ print("y train / y test shape: ", y_train.shape, y_test.shape)
 model = LinearRegression()
 model.fit(X_train, y_train)
 y_predicted = model.predict(X_test)
-print("y predicted: ", y_predicted)
+
+plt.scatter(y_test, y_predicted, color = 'red')
+plt.title('Predicted Profit vs Profit')
+plt.xlabel('Profit')
+plt.ylabel('Predicited Profit')
+plt.show()
 
 X = np.append(arr = np.ones((50, 1)).astype(int), values = X, axis = 1)
 
