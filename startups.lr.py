@@ -45,18 +45,19 @@ X = np.append(arr = np.ones((50, 1)).astype(int), values = X, axis = 1)
 model_OLS = sm.OLS(endog = y, exog = X[:, [0, 1, 2, 3, 4, 5]]).fit()
 print("OLS Summary [0, 1, 2, 3, 4, 5]\n", model_OLS.summary())
 
-# Removed x2 -  variable.
+# Removed Dummy variable.
 model_OLS = sm.OLS(endog = y, exog = X[:, [0, 1, 3, 4, 5]]).fit()
 print("OLS Summary [0, 1, 3, 4, 5]\n", model_OLS.summary())
 
-# Removed x1 -  variable.
+# Removed State variable.
 model_OLS = sm.OLS(endog = y, exog = X[:, [0, 3, 4, 5]]).fit()
 print("OLS Summary [0, 3, 4, 5]\n", model_OLS.summary())
 
-# Removed x4 -  variable.
+# Removed Admin variable.
 model_OLS = sm.OLS(endog = y, exog = X[:, [0, 3, 5]]).fit()
 print("OLS Summary [0, 3, 5]\n", model_OLS.summary())
 
+# Removed MarketingSpend.
 # R&DSpend is the best independent variable.
 model_OLS = sm.OLS(endog = y, exog = X[:, [0, 3]]).fit()
 print("OLS Summary [0, 3]\n", model_OLS.summary())
