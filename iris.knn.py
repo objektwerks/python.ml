@@ -5,7 +5,7 @@ from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn import metrics
-import matplotlib.pyplot as plot
+import matplotlib.pyplot as plt
 
 X, y = load_iris(return_X_y=True)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=3)
@@ -34,12 +34,12 @@ print("Highest [knn=16] accuracy score: ", metrics.accuracy_score(y_test, y_pred
 print("Cross-validation mean accuracy score: ",
       cross_val_score(model, X, y, cv=10, scoring='accuracy').mean())
 
-plot.plot(k_range, k_scores)
-plot.xlabel('Value of K for KNN')
-plot.ylabel('Testing Accuracy')
-plot.show()
+plt.plot(k_range, k_scores)
+plt.xlabel('Value of K for KNN')
+plt.ylabel('Testing Accuracy')
+plt.show()
 
-plot.plot(cv_range, cv_scores)
-plot.xlabel('Value of K for KNN')
-plot.ylabel('Cross-Validation Accuracy')
-plot.show()
+plt.plot(cv_range, cv_scores)
+plt.xlabel('Value of K for KNN')
+plt.ylabel('Cross-Validation Accuracy')
+plt.show()
