@@ -58,6 +58,6 @@ model_OLS = sm.OLS(endog = y, exog = X[:, [0, 3, 5]]).fit()
 print("OLS Summary [0, 3, 5]\n", model_OLS.summary())
 
 # Removed MarketingSpend.
-# R&DSpend is the best independent variable.
+# R&DSpend is the best independent variable vis-a-vis dependent variable, Profit.
 model_OLS = sm.OLS(endog = y, exog = X[:, [0, 3]]).fit()
 print("OLS Summary [0, 3]\n", model_OLS.summary())
