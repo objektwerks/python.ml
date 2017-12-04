@@ -33,7 +33,7 @@ plt.ylabel('Salary')
 plt.show()
 
 plt.scatter(X, y, color = 'red')
-plt.plot(X, ploy_model.predict(features.fit_transform(X)), color = 'blue')
+plt.plot(X, ploy_model.predict(X_poly), color = 'blue')
 plt.title('Linear Polynomial Regression')
 plt.xlabel('Role-Level')
 plt.ylabel('Salary')
