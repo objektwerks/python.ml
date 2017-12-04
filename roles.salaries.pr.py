@@ -1,5 +1,5 @@
 """
-Linear Polynominal Regression test on roles.salaries data.
+Polynominal Regression test on roles.salaries data.
 """
 import pandas as pd
 from sklearn.linear_model import LinearRegression
@@ -33,7 +33,7 @@ plt.show()
 
 plt.scatter(X, y, color = 'red')
 plt.plot(X, ploy_model.predict(X_poly), color = 'blue')
-plt.title('Linear Polynomial Regression')
+plt.title('Polynomial Regression')
 plt.xlabel('Role-Level')
 plt.ylabel('Salary')
 plt.show()
@@ -45,11 +45,11 @@ X_smooth_poly = features.fit_transform(X_grid)
 
 plt.scatter(X, y, color = 'red')
 plt.plot(X_grid, ploy_model.predict(X_smooth_poly), color = 'blue')
-plt.title('Smooth Linear Polynomial Regression')
+plt.title('Smooth Polynomial Regression')
 plt.xlabel('Role-Level')
 plt.ylabel('Salary')
 plt.show()
 
-# Linear Polynominal Regression is more accurate!
+# Polynominal Regression is more accurate!
 print("Linear Regression predict @ 6.5 role-level salary: ", model.predict(6.5))
-print("Linear Polynominal Regression predict @ 6.5 role-level salary: ", ploy_model.predict(features.fit_transform(6.5)))
+print("Polynominal Regression predict @ 6.5 role-level salary: ", ploy_model.predict(features.fit_transform(6.5)))
