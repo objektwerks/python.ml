@@ -50,6 +50,6 @@ plt.xlabel('Role-Level')
 plt.ylabel('Salary')
 plt.show()
 
-# Linear Polynominal Regression more accurate!
+# Linear Polynominal Regression is more accurate!
 print("Linear Regression predict @ 6.5 role-level salary: ", model.predict(6.5))
 print("Linear Polynominal Regression predict @ 6.5 role-level salary: ", ploy_model.predict(features.fit_transform(6.5)))
