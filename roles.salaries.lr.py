@@ -20,7 +20,6 @@ model.fit(X, y)
 features = PolynomialFeatures(degree = 4)
 X_poly = features.fit_transform(X)
 features.fit(X_poly, y)
-print("X poly:\n", X_poly)
 
 ploy_model = LinearRegression()
 ploy_model.fit(X_poly, y)
@@ -39,14 +38,18 @@ plt.xlabel('Role-Level')
 plt.ylabel('Salary')
 plt.show()
 
+# Role-Level 1 - 10, step 0.1
 X_grid = np.arange(min(X), max(X), 0.1)
 X_grid = X_grid.reshape((len(X_grid), 1))
+X_smooth_poly = features.fit_transform(X_grid)
+
 plt.scatter(X, y, color = 'red')
-plt.plot(X_grid, ploy_model.predict(features.fit_transform(X_grid)), color = 'blue')
+plt.plot(X_grid, ploy_model.predict(X_smooth_poly), color = 'blue')
 plt.title('Smooth Linear Polynomial Regression')
 plt.xlabel('Role-Level')
 plt.ylabel('Salary')
 plt.show()
 
-print("Linear Regression predict: ", model.predict(6.5))
-print("Linear Polynominal Regression predict: ", ploy_model.predict(features.fit_transform(6.5)))
+# Linear Polynominal Regression more accurate!
+print("Linear Regression predict @ 6.5 role-level salary: ", model.predict(6.5))
+print("Linear Polynominal Regression predict @ 6.5 role-level salary: ", ploy_model.predict(features.fit_transform(6.5)))
