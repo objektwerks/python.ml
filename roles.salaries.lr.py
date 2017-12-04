@@ -1,5 +1,5 @@
 """
-Linear Regression test on roles.salaries data.
+Linear Polynominal Regression test on roles.salaries data.
 """
 import pandas as pd
 from sklearn.linear_model import LinearRegression
@@ -7,9 +7,10 @@ from sklearn.preprocessing import PolynomialFeatures
 import matplotlib.pyplot as plt
 import numpy as np
 
-dataset = pd.read_csv('Position_Salaries.csv')
-X = dataset.iloc[:, 1:2].values
-y = dataset.iloc[:, 2].values
+df = pd.read_csv('./data/roles.salaries.csv')
+X = df.iloc[:, 1:2].values
+y = df.iloc[:, 2].values
+print("X shape / y shape: ", X.shape, y.shape)
 
 model = LinearRegression()
 model.fit(X, y)
