@@ -11,6 +11,8 @@ df = pd.read_csv('./data/roles.salaries.csv')
 X = df.iloc[:, 1:2].values
 y = df.iloc[:, 2].values
 print("X shape / y shape: ", X.shape, y.shape)
+print("X:\n", X)
+print("y:\n", y)
 
 model = LinearRegression()
 model.fit(X, y)
