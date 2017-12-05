@@ -9,7 +9,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sb
 
-df = pd.read_csv('./data/ads.csv', index_col=0)
+df = pd.read_csv('./../../data/ads.csv', index_col=0)
 print("Data shape: ", df.shape)
 print("Data:\n", df.head(n=3))
 

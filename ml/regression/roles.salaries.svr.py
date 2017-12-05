@@ -7,7 +7,7 @@ from sklearn.svm import SVR
 import matplotlib.pyplot as plt
 import numpy as np
 
-df = pd.read_csv('./data/roles.salaries.csv')
+df = pd.read_csv('./../../data/roles.salaries.csv')
 X = df.iloc[:, 1:2].values
 y = df.iloc[:, 2].values
 print("X shape / y shape: ", X.shape, y.shape)

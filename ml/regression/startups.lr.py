@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import statsmodels.formula.api as sm
 
-df = pd.read_csv('./data/startups.csv')
+df = pd.read_csv('./../../data/startups.csv')
 X = df.iloc[:, :-1].values
 y = df.iloc[:, 4].values
 

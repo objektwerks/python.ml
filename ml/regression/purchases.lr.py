@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 
-df = pd.read_csv('./data/purchases.csv')
+df = pd.read_csv('./../../data/purchases.csv')
 X = df.iloc[:, :-1].values
 y = df.iloc[:, 3].values
 print("X: ", X)
