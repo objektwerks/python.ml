@@ -13,12 +13,12 @@ print("X shape / y shape: ", X.shape, y.shape)
 print("X:\n", X)
 print("y:\n", y)
 
-model = RandomForestRegressor(n_estimators = 10, random_state = 0)
+model = RandomForestRegressor(n_estimators = 300, random_state = 0)
 model.fit(X, y)
 print("Random Forest Regression predict @ 6.5 role-level salary: ", model.predict(6.5))
 
-# Role-Level 1 - 10, step 0.1
-X_grid = np.arange(min(X), max(X), 0.1)
+# Role-Level 1 - 10, step 0.01
+X_grid = np.arange(min(X), max(X), 0.01)
 X_grid = X_grid.reshape((len(X_grid), 1))
 
 plt.scatter(X, y, color = 'red')
