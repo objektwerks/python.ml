@@ -17,13 +17,16 @@ print("y:\n", y)
 sc_X = StandardScaler()
 sc_y = StandardScaler()
 X = sc_X.fit_transform(X)
+y = y.reshape(-1, 1)
 y = sc_y.fit_transform(y)
+print("Feature scaled X:\n", X)
+print("Feature scaled y:\n", y)
 
 model = SVR(kernel = 'rbf')
 model.fit(X, y)
 
-y_predicted = model.predict(6.5)
-y_predicted = sc_y.inverse_transform(y_predicted)
+y_predicted = sc_y.inverse_transform(model.predict(sc_X.transform(np.array([[6.5]]))))
+print("Support Vector Regression predict @ 6.5 role-level salary: ", y_predicted)
 
 plt.scatter(X, y, color = 'red')
 plt.plot(X, model.predict(X), color = 'blue')
