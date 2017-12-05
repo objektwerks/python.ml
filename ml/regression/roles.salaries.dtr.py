@@ -15,8 +15,7 @@ print("y:\n", y)
 
 model = DecisionTreeRegressor(random_state = 0)
 model.fit(X, y)
-y_predicted = model.predict(6.5)
-print("Decision Tree Regression predict @ 6.5 role-level salary: ", y_predicted)
+print("Decision Tree Regression predict @ 6.5 role-level salary: ", model.predict(6.5))
 
 # Role-Level 1 - 10, step 0.1
 X_grid = np.arange(min(X), max(X), 0.1)

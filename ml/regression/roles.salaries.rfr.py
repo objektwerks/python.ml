@@ -15,8 +15,7 @@ print("y:\n", y)
 
 model = RandomForestRegressor(n_estimators = 10, random_state = 0)
 model.fit(X, y)
-y_predicted = model.predict(6.5)
-print("Random Forest Regression predict @ 6.5 role-level salary: ", y_predicted)
+print("Random Forest Regression predict @ 6.5 role-level salary: ", model.predict(6.5))
 
 # Role-Level 1 - 10, step 0.1
 X_grid = np.arange(min(X), max(X), 0.1)
