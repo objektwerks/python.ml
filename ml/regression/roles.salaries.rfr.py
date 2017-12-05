@@ -18,8 +18,8 @@ model.fit(X, y)
 y_predicted = model.predict(6.5)
 print("Random Forest Regression predict @ 6.5 role-level salary: ", y_predicted)
 
-# Role-Level 1 - 10, step 0.01
-X_grid = np.arange(min(X), max(X), 0.01)
+# Role-Level 1 - 10, step 0.1
+X_grid = np.arange(min(X), max(X), 0.1)
 X_grid = X_grid.reshape((len(X_grid), 1))
 
 plt.scatter(X, y, color = 'red')
