@@ -1,5 +1,5 @@
 """
-Random Forrest Classification test on social network ads data.
+Random Forest Classification test on social network ads data.
 """
 import pandas as pd
 from sklearn.model_selection import train_test_split
