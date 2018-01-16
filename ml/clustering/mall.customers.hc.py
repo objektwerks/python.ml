@@ -13,7 +13,7 @@ print("X shape: ", X.shape)
 dendrogram = sch.dendrogram(sch.linkage(X, method = 'ward'))
 plt.title('Dendrogram')
 plt.xlabel('Customers')
-plt.ylabel('Euclidean distances')
+plt.ylabel('Euclidean Distances')
 plt.show()
 
 hc = AgglomerativeClustering(n_clusters = 5, affinity = 'euclidean', linkage = 'ward')
