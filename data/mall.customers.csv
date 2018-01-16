@@ -1,4 +1,4 @@
-cust_id,genre,age,annual_income_k$,spending_score_1-100
+cust_id,genre,age,annual_income_score,spending_score
 0001,Male,19,15,39
 0002,Male,21,15,81
 0003,Female,20,16,6
