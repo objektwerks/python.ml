@@ -1,4 +1,3 @@
-# Apriori
 """
 Apriori test on shopping data.
 """
