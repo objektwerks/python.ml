@@ -1,5 +1,5 @@
 """
-Thompson Sampling test on ads ctr data.
+Thompson Sampling test on ads click-thru-rate data.
 """
 import pandas as pd
 import random

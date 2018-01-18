@@ -1,5 +1,5 @@
 """
-Random Selection test on ads ctr data.
+Random Selection test on ads click-thru-rate data.
 """
 import pandas as pd
 import random

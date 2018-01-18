@@ -1,5 +1,5 @@
 """
-Random Selection test on ads ctr data.
+Random Selection test on ads click-thru-rate data.
 """
 import random
 import pandas as pd
@@ -12,7 +12,7 @@ d = 10
 ads_selected = []
 total_reward = 0
 for n in range(0, N):
-    ad = random.randrange(d)
+    ad = random.randrange(d
     ads_selected.append(ad)
     reward = df.values[n, ad]
     total_reward = total_reward + reward
