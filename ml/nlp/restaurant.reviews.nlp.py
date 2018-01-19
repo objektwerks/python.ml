@@ -15,8 +15,8 @@ df = pd.read_csv('./../../data/restaurant.reviews.tsv', delimiter = '\t', quotin
 
 nltk.download('stopwords')
 corpus = []
-for i in range(0, 1000):
-    review = re.sub('[^a-zA-Z]', ' ', df['Review'][i])
+for line in range(0, 1000):
+    review = re.sub('[^a-zA-Z]', ' ', df['Review'][line])
     review = review.lower()
     review = review.split()
     ps = PorterStemmer()
