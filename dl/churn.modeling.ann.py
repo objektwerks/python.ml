@@ -22,12 +22,13 @@ X = onehotencoder.fit_transform(X).toarray()
 X = X[:, 1:]
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
-sc = StandardScaler()
-X_train = sc.fit_transform(X_train)
-X_test = sc.transform(X_test)
 print("X shape / y shape: ", X.shape, y.shape)
 print("X train / X test shape: ", X_train.shape, X_test.shape)
 print("y train / y test shape: ", y_train.shape, y_test.shape)
+
+sc = StandardScaler()
+X_train = sc.fit_transform(X_train)
+X_test = sc.transform(X_test)
 
 classifier = Sequential()
 classifier.add(Dense(output_dim = 6, init = 'uniform', activation = 'relu', input_dim = 11))
