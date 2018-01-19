@@ -1,8 +1,8 @@
 """
 Natural Language Processing test on restaurant review data.
 """
-import pandas as pd
 import re
+import pandas as pd
 import nltk
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
