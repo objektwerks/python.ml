@@ -3,7 +3,11 @@ Convolutional Neural Network test on cats and dogs data.
 
 WARNING: The cats and dogs dataset is TOO LARGE to push to Github. Download at
 https://www.superdatascience.com/machine-learning/ , Part 8. Deep Learning,
-Convolutional Neural Networks.zip
+Convolutional Neural Networks.zip Note the directory structure for this test:
+python.ml
+    dataset
+        test
+        training
 """
 from keras.models import Sequential
 from keras.layers import Convolution2D

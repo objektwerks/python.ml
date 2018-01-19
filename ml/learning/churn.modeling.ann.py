@@ -10,8 +10,8 @@ from keras.layers import Dense
 from sklearn.metrics import confusion_matrix
 
 df = pd.read_csv('./../../data/churn.modeling.csv')
-X = dataset.iloc[:, 3:13].values
-y = dataset.iloc[:, 13].values
+X = df.iloc[:, 3:13].values
+y = df.iloc[:, 13].values
 
 labelencoder_X_1 = LabelEncoder()
 X[:, 1] = labelencoder_X_1.fit_transform(X[:, 1])
