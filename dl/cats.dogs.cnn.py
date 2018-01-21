@@ -8,6 +8,7 @@ python.ml
     dataset
         test
         training
+WARNING: Tensorflow does not support Python 3.6 at this time.
 """
 from keras.models import Sequential
 from keras.layers import Convolution2D

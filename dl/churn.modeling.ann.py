@@ -1,5 +1,6 @@
 """
 Artificial Neural Network test on churn modeling data.
+WARNING: Tensorflow does not support Python 3.6 at this time.
 """
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
@@ -31,8 +32,11 @@ X_train = sc.fit_transform(X_train)
 X_test = sc.transform(X_test)
 
 classifier = Sequential()
+# Input Layer
 classifier.add(Dense(output_dim = 6, init = 'uniform', activation = 'relu', input_dim = 11))
+# Hidden Layer
 classifier.add(Dense(output_dim = 6, init = 'uniform', activation = 'relu'))
+# Output Layer
 classifier.add(Dense(output_dim = 1, init = 'uniform', activation = 'sigmoid'))
 classifier.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = ['accuracy'])
 classifier.fit(X_train, y_train, batch_size = 10, nb_epoch = 100)
