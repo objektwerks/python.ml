@@ -47,7 +47,6 @@ from keras.layers import Dense
 from keras.preprocessing.image import ImageDataGenerator
 
 classifier = Sequential()
-
 classifier.add(Conv2D(32, (3, 3), input_shape = (64, 64, 3), activation = "relu"))
 classifier.add(MaxPooling2D(pool_size = (2, 2)))
 classifier.add(Conv2D(32, (3, 3), activation = "relu"))
