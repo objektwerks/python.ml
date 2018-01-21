@@ -8,7 +8,8 @@ python.ml
     dataset
         test
         training
-WARNING: Tensorflow does not support Python 3.6 at this time.
+WARNING: For Python 3.6 install Tensorflow 1.5+ Note the version number in the url!
+INSTALL: pip3 install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.5.0rc1-py3-none-any.whl
 """
 from keras.models import Sequential
 from keras.layers import Convolution2D
@@ -34,12 +35,12 @@ train_datagen = ImageDataGenerator(rescale = 1./255,
 
 test_datagen = ImageDataGenerator(rescale = 1./255)
 
-training_set = train_datagen.flow_from_directory('./../../dataset/training',
+training_set = train_datagen.flow_from_directory('./../dataset/training',
                                                  target_size = (64, 64),
                                                  batch_size = 32,
                                                  class_mode = 'binary')
 
-test_set = test_datagen.flow_from_directory('./../../dataset/test',
+test_set = test_datagen.flow_from_directory('./../dataset/test',
                                             target_size = (64, 64),
                                             batch_size = 32,
                                             class_mode = 'binary')

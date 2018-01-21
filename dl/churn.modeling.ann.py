@@ -1,6 +1,7 @@
 """
 Artificial Neural Network test on churn modeling data.
-WARNING: Tensorflow does not support Python 3.6 at this time.
+WARNING: For Python 3.6 install Tensorflow 1.5+ Note the version number in the url!
+INSTALL: pip3 install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.5.0rc1-py3-none-any.whl
 """
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
@@ -10,7 +11,7 @@ from keras.models import Sequential
 from keras.layers import Dense
 from sklearn.metrics import confusion_matrix
 
-df = pd.read_csv('./../../data/churn.modeling.csv')
+df = pd.read_csv('./../data/churn.modeling.csv')
 X = df.iloc[:, 3:13].values
 y = df.iloc[:, 13].values
 
