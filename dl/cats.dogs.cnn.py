@@ -37,7 +37,7 @@ Epoch 9/10
 Epoch 10/10
 100/100 [==============================] - 47s 471ms/step - loss: 0.5126 - acc: 0.7403 - val_loss: 0.5207 - val_acc: 0.7450
 
-Increase epochs and steps per epoch for greater accuracy, requiring more processing time.
+Increase epochs for greater accuracy, requiring more processing time.
 """
 from keras.models import Sequential
 from keras.layers import Conv2D
@@ -72,7 +72,7 @@ test_set = test_datagen.flow_from_directory('./../dataset/test',
                                             class_mode = 'binary')
 
 classifier.fit_generator(training_set,
-                         steps_per_epoch = 100,
+                         steps_per_epoch = 250,
                          epochs = 10,
                          verbose = 2,
                          validation_data = test_set)
