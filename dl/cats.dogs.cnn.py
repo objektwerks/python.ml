@@ -11,31 +11,32 @@ python.ml
 WARNING: For Python 3.6 install Tensorflow 1.5+ Note the version number in the url!
 INSTALL: pip3 install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.5.0rc1-py3-none-any.whl
 
-The test takes about 8+ minutes:
+The test takes about 12+ minutes:
 Using TensorFlow backend.
 Found 8000 images belonging to 2 classes.
 Found 2000 images belonging to 2 classes.
 Epoch 1/10
-2018-01-21 14:44:57.636634: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.2 AVX
-100/100 [==============================] - 44s 438ms/step - loss: 0.6997 - acc: 0.5416 - val_loss: 0.6597 - val_acc: 0.6030
+2018-01-21 15:27:56.977934: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.2 AVX
+ - 79s - loss: 0.6603 - acc: 0.5970 - val_loss: 0.5914 - val_acc: 0.7005
 Epoch 2/10
-100/100 [==============================] - 46s 464ms/step - loss: 0.6615 - acc: 0.6059 - val_loss: 0.6314 - val_acc: 0.6790
+ - 77s - loss: 0.5902 - acc: 0.6815 - val_loss: 0.5421 - val_acc: 0.7360
 Epoch 3/10
-100/100 [==============================] - 44s 439ms/step - loss: 0.6266 - acc: 0.6497 - val_loss: 0.6587 - val_acc: 0.6035
+ - 80s - loss: 0.5582 - acc: 0.7111 - val_loss: 0.5501 - val_acc: 0.7245
 Epoch 4/10
-100/100 [==============================] - 45s 449ms/step - loss: 0.5987 - acc: 0.6784 - val_loss: 0.5696 - val_acc: 0.7100
+ - 71s - loss: 0.5317 - acc: 0.7314 - val_loss: 0.5167 - val_acc: 0.7435
 Epoch 5/10
-100/100 [==============================] - 49s 489ms/step - loss: 0.5884 - acc: 0.6869 - val_loss: 0.6741 - val_acc: 0.6320
+ - 77s - loss: 0.5008 - acc: 0.7576 - val_loss: 0.4741 - val_acc: 0.7755
 Epoch 6/10
-100/100 [==============================] - 46s 457ms/step - loss: 0.5772 - acc: 0.7000 - val_loss: 0.5479 - val_acc: 0.7360
+ - 82s - loss: 0.4731 - acc: 0.7761 - val_loss: 0.4753 - val_acc: 0.7725
 Epoch 7/10
-100/100 [==============================] - 48s 479ms/step - loss: 0.5578 - acc: 0.7119 - val_loss: 0.5346 - val_acc: 0.7480
+ - 79s - loss: 0.4588 - acc: 0.7801 - val_loss: 0.4472 - val_acc: 0.7925
 Epoch 8/10
-100/100 [==============================] - 49s 494ms/step - loss: 0.5421 - acc: 0.7313 - val_loss: 0.5390 - val_acc: 0.7400
+ - 88s - loss: 0.4568 - acc: 0.7792 - val_loss: 0.5146 - val_acc: 0.7540
 Epoch 9/10
-100/100 [==============================] - 47s 469ms/step - loss: 0.5169 - acc: 0.7409 - val_loss: 0.5364 - val_acc: 0.7390
+ - 84s - loss: 0.4324 - acc: 0.7961 - val_loss: 0.4570 - val_acc: 0.7890
 Epoch 10/10
-100/100 [==============================] - 47s 471ms/step - loss: 0.5126 - acc: 0.7403 - val_loss: 0.5207 - val_acc: 0.7450
+ - 82s - loss: 0.4215 - acc: 0.8066 - val_loss: 0.4434 - val_acc: 0.8045
+objektwerks:dl objektwerks$
 
 Increase epochs for greater accuracy, requiring more processing time.
 """
