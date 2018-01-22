@@ -42,7 +42,7 @@ grid_search = GridSearchCV(estimator = model,
                            cv = 10,
                            n_jobs = -1)
 grid_search = grid_search.fit(X_train, y_train)
-print("Best Grid Search Score: ", grid_search.best_score_)
+print("Mean Grid Search Score: ", grid_search.best_score_)
 print("Best Grid Search Parameters: ", grid_search.best_params_)
 
 X_set, y_set = X_train, y_train
