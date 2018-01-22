@@ -1,5 +1,5 @@
 """
-PCA test on wine data.
+Principal Component Analysis (PCA) test, with backward feature elimination on wine data.
 """
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -33,7 +33,7 @@ classifier = LogisticRegression(random_state = 0)
 classifier.fit(X_train, y_train)
 y_pred = classifier.predict(X_test)
 cm = confusion_matrix(y_test, y_pred)
-print("Confusion matrix: ", cm)
+print("Confusion matrix:\n", cm)
 
 X_set, y_set = X_train, y_train
 X1, X2 = np.meshgrid(np.arange(start = X_set[:, 0].min() - 1, stop = X_set[:, 0].max() + 1, step = 0.01),
