@@ -30,8 +30,8 @@ cm = confusion_matrix(y_test, y_pred)
 print("Confusion matrix:\n", cm)
 
 accuracies = cross_val_score(estimator = model, X = X_train, y = y_train, cv = 10)
-accuracies.mean()
-accuracies.std()
+print("Accuracy mean: ", accuracies.mean())
+print("Accuracy std: ", accuracies.std())
 
 X_set, y_set = X_train, y_train
 X1, X2 = np.meshgrid(np.arange(start = X_set[:, 0].min() - 1, stop = X_set[:, 0].max() + 1, step = 0.01),
