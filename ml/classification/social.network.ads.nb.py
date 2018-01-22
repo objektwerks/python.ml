@@ -26,7 +26,7 @@ model = GaussianNB()
 model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 cm = confusion_matrix(y_test, y_pred)
-print("Confusion matrix: ", cm)
+print("Confusion matrix:\n", cm)
 
 X_set, y_set = X_train, y_train
 X1, X2 = np.meshgrid(np.arange(start = X_set[:, 0].min() - 1, stop = X_set[:, 0].max() + 1, step = 0.01),

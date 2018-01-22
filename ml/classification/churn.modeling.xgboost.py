@@ -37,7 +37,7 @@ classifier = XGBClassifier()
 classifier.fit(X_train, y_train)
 y_pred = classifier.predict(X_test)
 cm = confusion_matrix(y_test, y_pred)
-print("Confusion matrix: ", cm)
+print("Confusion matrix:\n", cm)
 
 accuracies = cross_val_score(estimator = classifier, X = X_train, y = y_train, cv = 10)
 print("Accuracy mean: ", accuracies.mean())
