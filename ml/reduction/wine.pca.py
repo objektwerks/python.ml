@@ -27,7 +27,7 @@ model = PCA(n_components = 2)
 X_train = model.fit_transform(X_train)
 X_test = model.transform(X_test)
 explained_variance = model.explained_variance_ratio_
-print("PCA Explained Variance Ratio: ", explained_variance)
+print("Top 2 selected features: ", explained_variance)
 
 classifier = LogisticRegression(random_state = 0)
 classifier.fit(X_train, y_train)
