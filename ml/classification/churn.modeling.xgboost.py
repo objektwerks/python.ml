@@ -41,4 +41,4 @@ print("Confusion matrix:\n", cm)
 
 accuracies = cross_val_score(estimator = classifier, X = X_train, y = y_train, cv = 10)
 print("Accuracy mean: ", accuracies.mean())
-print("Accuracy std: ", accuracies.std())
+print("Accuracy standard deviation: ", accuracies.std())

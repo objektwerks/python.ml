@@ -32,7 +32,7 @@ print("Confusion matrix:\n", cm)
 
 accuracies = cross_val_score(estimator = model, X = X_train, y = y_train, cv = 10)
 print("Accuracy mean: ", accuracies.mean())
-print("Accuracy std: ", accuracies.std())
+print("Accuracy standard deviation: ", accuracies.std())
 
 parameters = [{'C': [1, 10, 100, 1000], 'kernel': ['linear']},
               {'C': [1, 10, 100, 1000], 'kernel': ['rbf'], 'gamma': [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]}]
