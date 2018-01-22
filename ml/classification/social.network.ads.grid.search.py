@@ -42,10 +42,8 @@ grid_search = GridSearchCV(estimator = model,
                            cv = 10,
                            n_jobs = -1)
 grid_search = grid_search.fit(X_train, y_train)
-best_accuracy = grid_search.best_score_
-best_parameters = grid_search.best_params_
-print("Best Accuracy: ", best_accuracy)
-print("Best Parameters: ", best_parameters)
+print("Best Grid Search Score: ", grid_search.best_score_)
+print("Best Grid Search Parameters: ", grid_search.best_params_)
 
 X_set, y_set = X_train, y_train
 X1, X2 = np.meshgrid(np.arange(start = X_set[:, 0].min() - 1, stop = X_set[:, 0].max() + 1, step = 0.01),
