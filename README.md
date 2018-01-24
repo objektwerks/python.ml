@@ -22,3 +22,25 @@ Data
 ----
 All required data is located in the data directory, less 1 dataset for cats.dogs.cnn.py, which
 contains instructions.
+
+Machine Learning
+----------------
+The following ML algos are tested:
+
+**Regression:** Linear, Logisitic, Polynominal, Decision Tree, Random Forrest, Support Vector
+
+**Classification:** Naive Bayes, Linear Support Vector Machine, Gaussian RBF Support Vector Machine,
+K-Nearest Neighbors, Decision Tree, Random Forrest, Logistic Regression, K-Fold Cross Validation,
+Grid Search, XGBoost
+
+**Clustering:** K-Means, Hierarchical
+
+**Learning:** Apriori, Eclat, Upper Confidence Bound (UCB), Thompson Sampling, Natural Language Processing (NLP)
+
+**Reduction:** Principal Component Analysis (PCA), Linear Discriminant Analysis (LDA), Kernel Principal Component Analysis (PCA)
+
+Deep Learning
+-------------
+The following DL algos are tested:
+
+Artificial Neural Networks, Convolution Neural Networks
