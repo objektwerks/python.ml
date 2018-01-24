@@ -38,16 +38,21 @@ X_test = sc.transform(X_test)
 classifier = Sequential()
 
 # Input Layer
-classifier.add(Dense(output_dim = 6, init = 'uniform', activation = 'relu', input_dim = 11))
+classifier.add(Dense(activation="relu", input_dim=11, units=6, kernel_initializer="uniform"))
 # Hidden Layer
-classifier.add(Dense(output_dim = 6, init = 'uniform', activation = 'relu'))
+classifier.add(Dense(activation="relu", units=6, kernel_initializer="uniform"))
 # Output Layer
-classifier.add(Dense(output_dim = 1, init = 'uniform', activation = 'sigmoid'))
+classifier.add(Dense(activation="sigmoid", units=1, kernel_initializer="uniform"))
 
 classifier.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = ['accuracy'])
-classifier.fit(X_train, y_train, batch_size = 10, nb_epoch = 10)
+classifier.fit(X_train, y_train, batch_size = 10, epochs = 10)
 
 y_pred = classifier.predict(X_test)
 y_pred = (y_pred > 0.5)
 cm = confusion_matrix(y_test, y_pred)
 print("Confusion matrix:\n", cm)
+
+"""
+WARNING: The KerasClassifier hangs! And the GridSearchCV requires hours to run, still resulting
+in only 86% accuracy.
+"""
