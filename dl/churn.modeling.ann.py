@@ -1,7 +1,10 @@
 """
 Artificial Neural Network test on churn modeling data.
 WARNING: For Python 3.6 install Tensorflow 1.5+ Note the version number in the url!
-INSTALL: pip3 install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.5.0rc1-py3-none-any.whl
+INSTALL:
+1. pip3 instal theano
+2. pip3 install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.5.0rc1-py3-none-any.whl
+3. pip3 install keras
 """
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
