@@ -43,4 +43,4 @@ Deep Learning
 -------------
 The following DL algos are tested:
 
-Artificial Neural Networks, Convolution Neural Networks
+**Neural Networks:** Artificial, Convolution
