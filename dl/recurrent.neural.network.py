@@ -1,5 +1,5 @@
 """
-Recurrent Neural Network test on stock price data.
+Recurrent Neural Network test on stock price data, using long-short-term memory (LSTM) networks.
 """
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
