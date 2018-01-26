@@ -2,7 +2,7 @@
 Apriori test on shopping data.
 """
 import pandas as pd
-from apyori import apriori
+from apriorilib import apriori
 
 df = pd.read_csv('./../../data/shopping.csv', header = None)
 baskets = []

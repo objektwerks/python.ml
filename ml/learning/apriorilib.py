@@ -1,9 +1,6 @@
-#!/usr/bin/env python
-
 """
 Simple implementation of Apriori algorithm by Python.
 """
-
 import sys
 import csv
 import argparse
@@ -12,7 +9,6 @@ import os
 from collections import namedtuple
 from itertools import combinations
 from itertools import chain
-
 
 # Meta informations.
 __version__ = '1.1.1'
