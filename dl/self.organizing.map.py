@@ -1,4 +1,3 @@
-# Self Organizing Map
 """
 Self Organizing Map test on credit card app data.
 """
@@ -11,6 +10,7 @@ from somlib import MiniSom
 df = pd.read_csv('./../data/credit.card.apps.csv')
 X = df.iloc[:, :-1].values
 y = df.iloc[:, -1].values
+print("X shape / y shape: ", X.shape, y.shape)
 
 sc = MinMaxScaler(feature_range = (0, 1))
 X = sc.fit_transform(X)
