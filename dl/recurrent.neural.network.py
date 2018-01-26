@@ -46,8 +46,8 @@ regressor.fit(X_train, y_train, epochs = 10, batch_size = 32)
 df_test = pd.read_csv('./../data/stock.price.test.csv')
 real_stock_price = df_test.iloc[:, 1:2].values
 
-df_merged = pd.concat((df_train['Open'], df_test['Open']), axis = 0)
-inputs = df_merged[len(df_merged) - len(df_test) - 60:].values
+df_train_test_merged = pd.concat((df_train['Open'], df_test['Open']), axis = 0)
+inputs = df_train_test_merged[len(df_train_test_merged) - len(df_test) - 60:].values
 inputs = inputs.reshape(-1,1)
 inputs = sc.transform(inputs)
 X_test = []
