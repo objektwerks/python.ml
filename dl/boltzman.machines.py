@@ -1,8 +1,9 @@
-# Boltzmann Machines
+"""
+Boltzmann Machine test on movie data.
 
-# Importing the libraries
-import numpy as np
+"""
 import pandas as pd
+import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.parallel
@@ -10,22 +11,18 @@ import torch.optim as optim
 import torch.utils.data
 from torch.autograd import Variable
 
-# Importing the dataset
-movies = pd.read_csv('ml-1m/movies.dat', sep = '::', header = None, engine = 'python', encoding = 'latin-1')
-users = pd.read_csv('ml-1m/users.dat', sep = '::', header = None, engine = 'python', encoding = 'latin-1')
-ratings = pd.read_csv('ml-1m/ratings.dat', sep = '::', header = None, engine = 'python', encoding = 'latin-1')
+movies = pd.read_csv('./../data/movies/movies.dat', sep = '::', header = None, engine = 'python', encoding = 'latin-1')
+users = pd.read_csv('./../data/movies/users.dat', sep = '::', header = None, engine = 'python', encoding = 'latin-1')
+ratings = pd.read_csv('./../data/movies/ratings.dat', sep = '::', header = None, engine = 'python', encoding = 'latin-1')
 
-# Preparing the training set and the test set
-training_set = pd.read_csv('ml-100k/u1.base', delimiter = '\t')
+training_set = pd.read_csv('./../data/movies/u1.base', delimiter = '\t')
 training_set = np.array(training_set, dtype = 'int')
-test_set = pd.read_csv('ml-100k/u1.test', delimiter = '\t')
+test_set = pd.read_csv('./../data/movies/u1.test', delimiter = '\t')
 test_set = np.array(test_set, dtype = 'int')
 
-# Getting the number of users and movies
 nb_users = int(max(max(training_set[:,0]), max(test_set[:,0])))
 nb_movies = int(max(max(training_set[:,1]), max(test_set[:,1])))
 
-# Converting the data into an array with users in lines and movies in columns
 def convert(data):
     new_data = []
     for id_users in range(1, nb_users + 1):
@@ -38,11 +35,9 @@ def convert(data):
 training_set = convert(training_set)
 test_set = convert(test_set)
 
-# Converting the data into Torch tensors
 training_set = torch.FloatTensor(training_set)
 test_set = torch.FloatTensor(test_set)
 
-# Converting the ratings into binary ratings 1 (Liked) or 0 (Not Liked)
 training_set[training_set == 0] = -1
 training_set[training_set == 1] = 0
 training_set[training_set == 2] = 0
@@ -52,7 +47,6 @@ test_set[test_set == 1] = 0
 test_set[test_set == 2] = 0
 test_set[test_set >= 3] = 1
 
-# Creating the architecture of the Neural Network
 class RBM():
     def __init__(self, nv, nh):
         self.W = torch.randn(nh, nv)
@@ -77,7 +71,7 @@ nh = 100
 batch_size = 100
 rbm = RBM(nv, nh)
 
-# Training the RBM
+# Train RBM
 nb_epoch = 10
 for epoch in range(1, nb_epoch + 1):
     train_loss = 0
@@ -96,7 +90,7 @@ for epoch in range(1, nb_epoch + 1):
         s += 1.
     print('epoch: '+str(epoch)+' loss: '+str(train_loss/s))
 
-# Testing the RBM
+# Test RBM
 test_loss = 0
 s = 0.
 for id_user in range(nb_users):
