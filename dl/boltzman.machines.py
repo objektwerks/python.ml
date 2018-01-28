@@ -9,7 +9,6 @@ import torch.nn as nn
 import torch.nn.parallel
 import torch.optim as optim
 import torch.utils.data
-from torch.autograd import Variable
 
 movies = pd.read_csv('./../data/movies/movies.dat', sep = '::', header = None, engine = 'python', encoding = 'latin-1')
 users = pd.read_csv('./../data/movies/users.dat', sep = '::', header = None, engine = 'python', encoding = 'latin-1')
