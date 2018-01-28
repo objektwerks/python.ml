@@ -1,6 +1,5 @@
 """
 Boltzmann Machine test on movie data.
-
 """
 import pandas as pd
 import numpy as np
