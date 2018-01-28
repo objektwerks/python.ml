@@ -58,13 +58,13 @@ for epoch in range(1, nb_epoch + 1):
     train_loss = 0
     s = 0.
     for id_user in range(nb_users):
-        input = Variable(training_set[id_user]).unsqueeze(0)
-        target = input.clone()
+        source = Variable(training_set[id_user]).unsqueeze(0)
+        target = source.clone()
         if torch.sum(target.data > 0) > 0:
-            output = sae(input)
+            sink = sae(source)
             target.require_grad = False
-            output[target == 0] = 0
-            loss = criterion(output, target)
+            sink[target == 0] = 0
+            loss = criterion(sink, target)
             mean_corrector = nb_movies/float(torch.sum(target.data > 0) + 1e-10)
             loss.backward()
             train_loss += np.sqrt(loss.data[0]*mean_corrector)
@@ -76,13 +76,13 @@ for epoch in range(1, nb_epoch + 1):
 test_loss = 0
 s = 0.
 for id_user in range(nb_users):
-    input = Variable(training_set[id_user]).unsqueeze(0)
+    source = Variable(training_set[id_user]).unsqueeze(0)
     target = Variable(test_set[id_user])
     if torch.sum(target.data > 0) > 0:
-        output = sae(input)
+        sink = sae(source)
         target.require_grad = False
-        output[target == 0] = 0
-        loss = criterion(output, target)
+        sink[target == 0] = 0
+        loss = criterion(sink, target)
         mean_corrector = nb_movies/float(torch.sum(target.data > 0) + 1e-10)
         test_loss += np.sqrt(loss.data[0]*mean_corrector)
         s += 1.
