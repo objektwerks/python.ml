@@ -102,6 +102,7 @@ ENV/
 
 # Intellij
 .idea
+python.ml.iml
 
 # Deep Learning Dataset ( Too Large )
 dataset/
