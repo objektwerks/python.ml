@@ -22,11 +22,11 @@ labelencoder_X_1 = LabelEncoder()
 X[:, 1] = labelencoder_X_1.fit_transform(X[:, 1])
 labelencoder_X_2 = LabelEncoder()
 X[:, 2] = labelencoder_X_2.fit_transform(X[:, 2])
-onehotencoder = OneHotEncoder(categorical_features = [1])
+onehotencoder = OneHotEncoder(categorical_features=[1])
 X = onehotencoder.fit_transform(X).toarray()
 X = X[:, 1:]
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
 print("X shape / y shape: ", X.shape, y.shape)
 print("X train / X test shape: ", X_train.shape, X_test.shape)
 print("y train / y test shape: ", y_train.shape, y_test.shape)
@@ -44,8 +44,8 @@ classifier.add(Dense(activation="relu", units=6, kernel_initializer="uniform"))
 # Output Layer
 classifier.add(Dense(activation="sigmoid", units=1, kernel_initializer="uniform"))
 
-classifier.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = ['accuracy'])
-classifier.fit(X_train, y_train, batch_size = 10, epochs = 10)
+classifier.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
+classifier.fit(X_train, y_train, batch_size=10, epochs=10)
 
 y_pred = classifier.predict(X_test)
 y_pred = (y_pred > 0.5)

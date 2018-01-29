@@ -18,8 +18,8 @@ for n in range(0, N):
     reward = df.values[n, ad]
     total_reward = total_reward + reward
 
-plt.hist(ads_selected)
-plt.title('Histogram of Ad Selections')
-plt.xlabel('Ads')
-plt.ylabel('Number of times each Ad was Selected')
-plt.show()
+    plt.hist(ads_selected)
+    plt.title('Histogram of Ad Selections')
+    plt.xlabel('Ads')
+    plt.ylabel('Number of times each Ad was Selected')
+    plt.show()

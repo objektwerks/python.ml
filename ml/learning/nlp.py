@@ -12,7 +12,7 @@ from sklearn.metrics import confusion_matrix
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import GaussianNB
 
-df = pd.read_csv('./../../data/restaurant.reviews.tsv', delimiter = '\t', quoting = 3)
+df = pd.read_csv('./../../data/restaurant.reviews.tsv', delimiter='\t', quoting=3)
 
 nltk.download('stopwords')
 corpus = []
@@ -25,10 +25,10 @@ for line in range(0, 1000):
     review = ' '.join(review)
     corpus.append(review)
 
-model = CountVectorizer(max_features = 1500)
+model = CountVectorizer(max_features=1500)
 X = model.fit_transform(corpus).toarray()
 y = df.iloc[:, 1].values
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.20, random_state = 0)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random_state=0)
 print("X shape / y shape: ", X.shape, y.shape)
 print("X train / X test shape: ", X_train.shape, X_test.shape)
 print("y train / y test shape: ", y_train.shape, y_test.shape)

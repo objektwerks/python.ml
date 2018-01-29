@@ -14,7 +14,7 @@ y = df.iloc[:, 3].values
 print("X: ", X)
 print("y: ", y)
 
-age_salary_imputer = Imputer(missing_values = 'NaN', strategy = 'mean', axis = 0)
+age_salary_imputer = Imputer(missing_values='NaN', strategy='mean', axis=0)
 age_salary_imputer = age_salary_imputer.fit(X[:, 1:3])
 X[:, 1:3] = age_salary_imputer.transform(X[:, 1:3])
 print("X age-salary nan-to-mean imputer:\n", X)
@@ -23,7 +23,7 @@ country_encoder = LabelEncoder()
 X[:, 0] = country_encoder.fit_transform(X[:, 0])
 print("X country label encoder:\n", X)
 
-country_hot_encoder = OneHotEncoder(categorical_features = [0])
+country_hot_encoder = OneHotEncoder(categorical_features=[0])
 X = country_hot_encoder.fit_transform(X).toarray()
 print("X country hot encoder:\n", X)
 
@@ -31,7 +31,7 @@ purchased_encoder = LabelEncoder()
 y = purchased_encoder.fit_transform(y)
 print("y purchased label encoder: ", y)
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
 print("X/y train-test split!")
 
 sc_X = StandardScaler()

@@ -118,11 +118,11 @@ class TransactionManager(object):
 
 
 # Ignore name errors because these names are namedtuples.
-SupportRecord = namedtuple( # pylint: disable=C0103
+SupportRecord = namedtuple(  # pylint: disable=C0103
     'SupportRecord', ('items', 'support'))
-RelationRecord = namedtuple( # pylint: disable=C0103
+RelationRecord = namedtuple(  # pylint: disable=C0103
     'RelationRecord', SupportRecord._fields + ('ordered_statistics',))
-OrderedStatistic = namedtuple( # pylint: disable=C0103
+OrderedStatistic = namedtuple(  # pylint: disable=C0103
     'OrderedStatistic', ('items_base', 'items_add', 'confidence', 'lift',))
 
 
@@ -212,7 +212,7 @@ def gen_ordered_statistics(transaction_manager, record):
         items_base = frozenset(combination_set)
         items_add = frozenset(items.difference(items_base))
         confidence = (
-            record.support / transaction_manager.calc_support(items_base))
+                record.support / transaction_manager.calc_support(items_base))
         lift = confidence / transaction_manager.calc_support(items_add)
         yield OrderedStatistic(
             frozenset(items_base), frozenset(items_add), confidence, lift)
@@ -377,6 +377,7 @@ def dump_as_json(record, output_file):
         record -- A RelationRecord instance to dump.
         output_file -- A file to output.
     """
+
     def default_func(value):
         """
         Default conversion for JSON value.

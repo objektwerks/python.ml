@@ -13,7 +13,7 @@ print("X shape / y shape: ", X.shape, y.shape)
 print("X:\n", X)
 print("y:\n", y)
 
-model = DecisionTreeRegressor(random_state = 0)
+model = DecisionTreeRegressor(random_state=0)
 model.fit(X, y)
 print("Decision Tree Regression predict @ 6.5 role-level salary: ", model.predict(6.5))
 
@@ -21,8 +21,8 @@ print("Decision Tree Regression predict @ 6.5 role-level salary: ", model.predic
 X_grid = np.arange(min(X), max(X), 0.1)
 X_grid = X_grid.reshape((len(X_grid), 1))
 
-plt.scatter(X, y, color = 'red')
-plt.plot(X_grid, model.predict(X_grid), color = 'blue')
+plt.scatter(X, y, color='red')
+plt.plot(X_grid, model.predict(X_grid), color='blue')
 plt.title('Decision Tree Regression')
 plt.xlabel('Role-Level')
 plt.ylabel('Salary')

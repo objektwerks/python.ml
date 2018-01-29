@@ -20,7 +20,7 @@ for n in range(0, N):
     for i in range(0, d):
         if (numbers_of_selections[i] > 0):
             average_reward = sums_of_rewards[i] / numbers_of_selections[i]
-            delta_i = math.sqrt(3/2 * math.log(n + 1) / numbers_of_selections[i])
+            delta_i = math.sqrt(3 / 2 * math.log(n + 1) / numbers_of_selections[i])
             upper_bound = average_reward + delta_i
         else:
             upper_bound = 1e400
