@@ -1,14 +1,14 @@
 """
 Recurrent Neural Network test on stock price data, using long-short-term memory (LSTM) networks.
 """
-import pandas as pd
-from sklearn.preprocessing import MinMaxScaler
-import numpy as np
-from keras.models import Sequential
-from keras.layers import Dense
-from keras.layers import LSTM
-from keras.layers import Dropout
 import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+from keras.layers import Dense
+from keras.layers import Dropout
+from keras.layers import LSTM
+from keras.models import Sequential
+from sklearn.preprocessing import MinMaxScaler
 
 df_train = pd.read_csv('./../data/stock.price.train.csv')
 training_set = df_train.iloc[:, 1:2].values

@@ -7,12 +7,12 @@ INSTALL:
 3. pip3 install keras
 """
 import pandas as pd
-from sklearn.preprocessing import LabelEncoder, OneHotEncoder
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
-from keras.models import Sequential
 from keras.layers import Dense
+from keras.models import Sequential
 from sklearn.metrics import confusion_matrix
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder, OneHotEncoder
+from sklearn.preprocessing import StandardScaler
 
 df = pd.read_csv('./../data/churn.modeling.csv')
 X = df.iloc[:, 3:13].values

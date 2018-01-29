@@ -1,13 +1,13 @@
 """
 Linear Regression test on startups data.
 """
-import pandas as pd
-from sklearn.preprocessing import LabelEncoder, OneHotEncoder
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
 import statsmodels.formula.api as sm
+from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 
 df = pd.read_csv('./../../data/startups.csv')
 X = df.iloc[:, :-1].values

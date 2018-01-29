@@ -1,13 +1,13 @@
 """
 Linear Regression using pandas and advertising data.
 """
-import pandas as pd
-from sklearn.model_selection import train_test_split, cross_val_score
-from sklearn.linear_model import LinearRegression
-from sklearn import metrics
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
 import seaborn as sb
+from sklearn import metrics
+from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import train_test_split, cross_val_score
 
 df = pd.read_csv('./../../data/ads.csv', index_col=0)
 print("Data shape: ", df.shape)

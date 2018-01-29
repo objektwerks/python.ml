@@ -1,15 +1,15 @@
 """
 K-Fold Cross Validation test on social network ads data.
 """
+import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
+from matplotlib.colors import ListedColormap
+from sklearn.metrics import confusion_matrix
+from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
-from sklearn.metrics import confusion_matrix
-from sklearn.model_selection import cross_val_score
-from matplotlib.colors import ListedColormap
-import numpy as np
-import matplotlib.pyplot as plt
 
 df = pd.read_csv('./../../data/social.network.ads.csv')
 X = df.iloc[:, [2, 3]].values

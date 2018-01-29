@@ -2,11 +2,11 @@
 Logistic Regression test on purchases data.
 """
 import pandas as pd
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import Imputer
 from sklearn.preprocessing import OneHotEncoder, LabelEncoder
-from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
-from sklearn.linear_model import LogisticRegression
 
 df = pd.read_csv('./../../data/purchases.csv')
 X = df.iloc[:, :-1].values

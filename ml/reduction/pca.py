@@ -1,15 +1,15 @@
 """
 Principal Component Analysis (PCA) test, with backward feature elimination on wine data.
 """
+import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
+from matplotlib.colors import ListedColormap
 from sklearn.decomposition import PCA
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix
-from matplotlib.colors import ListedColormap
-import numpy as np
-import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
 
 df = pd.read_csv('./../../data/wine.csv')
 X = df.iloc[:, 0:13].values

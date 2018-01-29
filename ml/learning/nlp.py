@@ -2,14 +2,15 @@
 Natural Language Processing test on restaurant review data.
 """
 import re
-import pandas as pd
+
 import nltk
+import pandas as pd
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.metrics import confusion_matrix
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import GaussianNB
-from sklearn.metrics import confusion_matrix
 
 df = pd.read_csv('./../../data/restaurant.reviews.tsv', delimiter = '\t', quoting = 3)
 

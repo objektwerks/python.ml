@@ -1,9 +1,10 @@
 """
 Thompson Sampling test on ads click-thru-rate data.
 """
-import pandas as pd
 import random
+
 import matplotlib.pyplot as plt
+import pandas as pd
 
 df = pd.read_csv('./../../data/ads.ctr.csv')
 

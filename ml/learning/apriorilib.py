@@ -1,14 +1,14 @@
 """
 Simple implementation of Apriori algorithm by Python.
 """
-import sys
-import csv
 import argparse
+import csv
 import json
 import os
+import sys
 from collections import namedtuple
-from itertools import combinations
 from itertools import chain
+from itertools import combinations
 
 # Meta informations.
 __version__ = '1.1.1'

@@ -1,10 +1,10 @@
 """
 Decision Tree Regression test on roles.salaries data.
 """
+import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
 from sklearn.tree import DecisionTreeRegressor
-import numpy as np
-import matplotlib.pyplot as plt
 
 df = pd.read_csv('./../../data/roles.salaries.csv')
 X = df.iloc[:, 1:2].values

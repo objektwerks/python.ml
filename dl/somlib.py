@@ -1,11 +1,13 @@
 """
     Minimalistic implementation of the Self Organizing Maps (SOM).
 """
+from collections import defaultdict
 from math import sqrt
+from warnings import warn
+
 from numpy import (array, unravel_index, nditer, linalg, random, subtract,
                    power, exp, pi, zeros, arange, outer, meshgrid, dot)
-from collections import defaultdict
-from warnings import warn
+
 
 def fast_norm(x):
     """Returns norm-2 of a 1-D numpy array.

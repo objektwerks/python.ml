@@ -1,10 +1,10 @@
 """
 Linear Regression test on salaries data.
 """
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
+import pandas as pd
+from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import train_test_split
 
 df = pd.read_csv('./../../data/salaries.csv')
 X = df.iloc[:, :-1].values

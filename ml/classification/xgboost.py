@@ -11,11 +11,11 @@ INSTALL:
 6. python3 setup.py install
 """
 import pandas as pd
-from sklearn.preprocessing import LabelEncoder, OneHotEncoder
-from sklearn.model_selection import train_test_split
-from xgboost import XGBClassifier
 from sklearn.metrics import confusion_matrix
 from sklearn.model_selection import cross_val_score
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder, OneHotEncoder
+from xgboost import XGBClassifier
 
 df = pd.read_csv('./../../data/churn.modeling.csv')
 X = df.iloc[:, 3:13].values

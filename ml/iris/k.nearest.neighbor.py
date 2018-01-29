@@ -1,11 +1,11 @@
 """
 KNeighbors Classifier test on iris data.
 """
+import matplotlib.pyplot as plt
+from sklearn import metrics
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn import metrics
-import matplotlib.pyplot as plt
 
 X, y = load_iris(return_X_y=True)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=3)

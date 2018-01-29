@@ -1,10 +1,10 @@
 """
 Hierarchical clustering test on mall customer data.
 """
+import matplotlib.pyplot as plt
 import pandas as pd
 import scipy.cluster.hierarchy as sch
 from sklearn.cluster import AgglomerativeClustering
-import matplotlib.pyplot as plt
 
 df = pd.read_csv('./../../data/mall.customers.csv')
 X = df.iloc[:, [3, 4]].values

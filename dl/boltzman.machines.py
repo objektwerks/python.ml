@@ -1,12 +1,10 @@
 """
 Boltzmann Machine test on movie data.
 """
-import pandas as pd
 import numpy as np
+import pandas as pd
 import torch
-import torch.nn as nn
 import torch.nn.parallel
-import torch.optim as optim
 import torch.utils.data
 
 movies = pd.read_csv('./../data/movies/movies.dat', sep = '::', header = None, engine = 'python', encoding = 'latin-1')

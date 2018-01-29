@@ -1,10 +1,10 @@
 """
 Self Organizing Map test on credit card app data.
 """
-import pandas as pd
 import numpy as np
-from sklearn.preprocessing import MinMaxScaler
+import pandas as pd
 from pylab import bone, pcolor, colorbar, plot, show
+from sklearn.preprocessing import MinMaxScaler
 from somlib import MiniSom
 
 df = pd.read_csv('./../data/credit.card.apps.csv')

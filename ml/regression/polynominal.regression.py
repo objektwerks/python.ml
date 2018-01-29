@@ -1,11 +1,11 @@
 """
 Polynominal Regression test on roles.salaries data.
 """
+import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import PolynomialFeatures
-import matplotlib.pyplot as plt
-import numpy as np
 
 df = pd.read_csv('./../../data/roles.salaries.csv')
 X = df.iloc[:, 1:2].values
