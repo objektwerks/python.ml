@@ -58,12 +58,12 @@ criterion = nn.MSELoss()
 optimizer = optim.RMSprop(sae.parameters(), lr=0.01, weight_decay=0.5)
 
 # Train SAE
-nb_epoch = 200
+nb_epoch = 10
 for epoch in range(1, nb_epoch + 1):
     train_loss = 0
     s = 0.
     for id_user in range(nb_users):
-        source = Variable(training_set[id_user]).unsqueeze(0)
+        source = Variable(torch.FloatTensor(training_set[id_user])).unsqueeze(0)
         target = source.clone()
         if torch.sum(target.data > 0) > 0:
             sink = sae(source)
@@ -81,8 +81,8 @@ for epoch in range(1, nb_epoch + 1):
 test_loss = 0
 s = 0.
 for id_user in range(nb_users):
-    source = Variable(training_set[id_user]).unsqueeze(0)
-    target = Variable(test_set[id_user])
+    source = Variable(torch.FloatTensor(training_set[id_user])).unsqueeze(0)
+    target = Variable(torch.FloatTensor(training_set[id_user]))
     if torch.sum(target.data > 0) > 0:
         sink = sae(source)
         target.require_grad = False
