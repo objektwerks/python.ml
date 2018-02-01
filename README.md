@@ -16,7 +16,7 @@ Sources
 -------
 Most of the material contained herein is based on 2 Udemy online courses:
   1. Machine Learning A-Z: Hands-on Python & R in Data Science
-  2. Deep Learning A-Z: Hands-on Artificial Neural Networks ( a work-in-progress )
+  2. Deep Learning A-Z: Hands-on Artificial Neural Networks
 
 Data
 ----
@@ -39,8 +39,12 @@ Grid Search, XGBoost
 
 **Reduction:** Principal Component Analysis (PCA), Linear Discriminant Analysis (LDA), Kernel Principal Component Analysis (PCA)
 
+**Libraries:** scikit-learn, pandas, numpy, matplotlib, xgboost
+
 Deep Learning
 -------------
 The following DL algos are tested:
 
 **Neural Networks:** Artificial, Convolution, Self Organizing Map, Boltzman Machine, Autoencoder, Reccurent
+
+**Libraries:** Keras, Theano, TensorFlow, PyTorch
