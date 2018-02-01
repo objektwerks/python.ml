@@ -20,8 +20,8 @@ Most of the material contained herein is based on 2 Udemy online courses:
 
 Data
 ----
-All required data is located in the data directory, less 1 dataset for cats.dogs.cnn.py, which
-contains instructions.
+All required data is located in the data directory, less 1 dataset for convolution.neural.network.py,
+which contains instructions.
 
 Machine Learning
 ----------------
