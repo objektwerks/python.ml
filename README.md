@@ -2,6 +2,10 @@ Python ML
 ---------
 Test machine and deep learning algos using Python 3 and Pip3.
 
+Virtual Environment
+-------------------
+1. python3.12 -m venv env
+
 Sources
 -------
 Most of the material contained herein is based on 2 Udemy online courses:
