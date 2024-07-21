@@ -1,10 +1,6 @@
 Python ML
 ---------
-The principal purpose of this project is to build and test machine and deep learning algos.
-
-Python
-------
-I used Python 3 throughout this project.
+Test machine and deep learning algos using Python 3.
 
 Libraries
 ---------
