@@ -1,6 +1,6 @@
 Python ML
 ---------
-Machine and deep learning algo scripts using Python 3, Pip3, Scikit-learn, Pandas, Numpy, Matplotlib, Xgboost,
+Python 3 machine and deep learning algo scripts using Scikit-learn, Pandas, Numpy, Matplotlib, Xgboost,
 Keras, Theano, TensorFlow and PyTorch.
 
 Virtual Environment
