@@ -18,7 +18,7 @@ Most of the material contained herein is based on 2 Udemy online courses:
 
 Data
 ----
-All data is located in the data directory, less 1 dataset for convolution.neural.network.py,
+All data is located in the data directory, less 1 dataset for dl/convolution.neural.network.py,
 which contains instructions.
 
 Machine Learning
