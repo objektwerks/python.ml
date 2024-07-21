@@ -1,12 +1,6 @@
 Python ML
 ---------
-Test machine and deep learning algos using Python 3.
-
-Libraries
----------
-I initially went down the Anaconda path. But it created issues with Homebrew, my one and only
-package manager. So I transitioned to Pip3 to install all required libraries. The installation
-of xgboost was challenging --- see churn.modeling.xgboost.py for details.
+Test machine and deep learning algos using Python 3 and Pip3.
 
 Sources
 -------
