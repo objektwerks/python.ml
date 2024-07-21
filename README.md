@@ -6,6 +6,7 @@ Keras, Theano, TensorFlow and PyTorch.
 Virtual Environment
 -------------------
 1. python3.12 -m venv env
+2. source env/bin/activate
 
 Courses
 -------
