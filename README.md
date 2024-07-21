@@ -12,7 +12,7 @@ Virtual Environment
 
 Courses
 -------
-Most of the material contained herein is based on 2 Udemy online courses:
+Most scripts are based on these **Udemy** courses:
   1. Machine Learning A-Z: Hands-on Python & R in Data Science
   2. Deep Learning A-Z: Hands-on Artificial Neural Networks
 
