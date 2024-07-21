@@ -7,7 +7,8 @@ Virtual Environment
 -------------------
 1. python3.12 -m venv env
 2. source env/bin/activate
-3. pip3 list | pip3 freeze > requirements.txt
+3. pip3 list
+4. pip3 freeze > requirements.txt
 >See [VE Setup](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/)
 
 Courses
