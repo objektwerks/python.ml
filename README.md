@@ -8,6 +8,7 @@ Virtual Environment
 1. python3.12 -m venv env
 2. source env/bin/activate
 3. pip3 list
+>See [VE Setup](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/)
 
 Courses
 -------
