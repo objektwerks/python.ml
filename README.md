@@ -34,7 +34,7 @@ Grid Search, XGBoost
 
 **Reduction:** Principal Component Analysis (PCA), Linear Discriminant Analysis (LDA), Kernel Principal Component Analysis (PCA)
 
-**Libraries:** scikit-learn, pandas, numpy, matplotlib, xgboost
+**Libraries:** Scikit-learn, Pandas, Numpy, Matplotlib, Xgboost
 
 Deep Learning
 -------------
