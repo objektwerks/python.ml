@@ -1,12 +1,12 @@
 Python ML
 ---------
-Test machine and deep learning algos using Python 3 and Pip3.
+Machine and deep learning algo scripts using Python 3 and Pip3.
 
 Virtual Environment
 -------------------
 1. python3.12 -m venv env
 
-Sources
+Courses
 -------
 Most of the material contained herein is based on 2 Udemy online courses:
   1. Machine Learning A-Z: Hands-on Python & R in Data Science
@@ -21,7 +21,7 @@ Machine Learning
 ----------------
 The following ML algos are tested:
 
-**Regression:** Linear, Logisitic, Polynominal, Decision Tree, Random Forrest, Support Vector
+**Regression:** Linear, Logistic, Polynomial, Decision Tree, Random Forrest, Support Vector
 
 **Classification:** Naive Bayes, Linear Support Vector Machine, Gaussian RBF Support Vector Machine,
 K-Nearest Neighbors, Decision Tree, Random Forrest, Logistic Regression, K-Fold Cross Validation,
@@ -39,6 +39,6 @@ Deep Learning
 -------------
 The following DL algos are tested:
 
-**Neural Networks:** Artificial, Convolution, Self Organizing Map, Boltzman Machine, Autoencoder, Reccurent
+**Neural Networks:** Artificial, Convolution, Self Organizing Map, Boltzmann Machine, Autoencoder, Recurrent
 
 **Libraries:** Keras, Theano, TensorFlow, PyTorch
