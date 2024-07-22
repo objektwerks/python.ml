@@ -4,13 +4,13 @@ Recurrent Neural Network test on stock price data, using long-short-term memory 
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-from keras.layers import Dense
-from keras.layers import Dropout
-from keras.layers import LSTM
-from keras.models import Sequential
+from keras.api.layers import Dense
+from keras.api.layers import Dropout
+from keras.api.layers import LSTM
+from keras.api.models import Sequential
 from sklearn.preprocessing import MinMaxScaler
 
-df_train = pd.read_csv('./../data/stock.price.train.csv')
+df_train = pd.read_csv('./../../data/stock.price.train.csv')
 training_set = df_train.iloc[:, 1:2].values
 
 sc = MinMaxScaler(feature_range=(0, 1))
@@ -43,7 +43,7 @@ regressor.add(Dense(units=1))
 regressor.compile(optimizer='adam', loss='mean_squared_error')
 regressor.fit(X_train, y_train, epochs=10, batch_size=32)
 
-df_test = pd.read_csv('./../data/stock.price.test.csv')
+df_test = pd.read_csv('./../../data/stock.price.test.csv')
 real_stock_price = df_test.iloc[:, 1:2].values
 
 df_train_test_merged = pd.concat((df_train['Open'], df_test['Open']), axis=0)
