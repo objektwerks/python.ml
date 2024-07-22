@@ -291,8 +291,7 @@ def apriori(transactions, **kwargs):
         )
         if not ordered_statistics:
             continue
-        yield RelationRecord(
-            support_record.items, support_record.support, ordered_statistics)
+        yield RelationRecord(support_record.items)
 
 
 ################################################################################
