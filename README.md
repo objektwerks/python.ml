@@ -5,7 +5,7 @@ Keras, Theano, TensorFlow, PyTorch, PySpark, Seaborn and Statsmodels.
 
 Todo
 ----
-1. Rewrite all file paths in scripts due to project restructuring!
+1. After 6+ years of change with Python3 and associated libraries, each script needs to be tested.
 
 Virtual Env
 -----------
