@@ -3,14 +3,14 @@ Python ML
 Python 3 machine and deep learning algo scripts using Scikit-learn, Pandas, Numpy, Matplotlib, Xgboost,
 Keras, Theano, TensorFlow and PyTorch.
 
-Virtual Environment
--------------------
+Virtual Env
+-----------
 1. python3.12 -m venv venv
-2. source env/bin/activate ( rerun if pip needs to be upgraded )
+2. source env/bin/activate ( rerun if pip needs to be upgraded, again; don't ask me why )
 >See [VE Setup](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/)
 
-PyCharm
--------
+PyCharm Virtual Env
+-------------------
 >See [VE Setup](https://www.jetbrains.com/help/pycharm/creating-virtual-environment.html#env-requirements)
 
 Install
