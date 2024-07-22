@@ -15,6 +15,7 @@ Install
 2. pip3 install pandas
 3. pip3 install matplotlib
 4. pip3 install xgboost
+5. pip3 install keras
 
 1. pip3 list
 2. pip3 freeze > requirements.txt
