@@ -32,6 +32,10 @@ Run
 ---
 1. python3.12 pd/pandas.data.py ( or other script location )
 
+Notes
+-----
+1. Jupiter notebook required PyCharm Professional ( see: src/wb/workbook.ipynb )
+
 Courses
 -------
 Most scripts are based on these **Udemy** courses:
