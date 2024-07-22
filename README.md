@@ -23,6 +23,10 @@ Install
 10. pip3 freeze > requirements.txt
 >**Note:** All modules can be installed via: ```pip3 install -r requirements.txt```
 
+Run
+---
+1. python3.12 pd/pandas.data.py ( or other script location )
+
 Courses
 -------
 Most scripts are based on these **Udemy** courses:
