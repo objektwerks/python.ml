@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from sklearn.cluster import KMeans
 
-df = pd.read_csv('./../../data/mall.customers.csv')
+df = pd.read_csv('./../../../data/mall.customers.csv')
 X = df.iloc[:, [3, 4]].values
 print("X shape: ", X.shape)
 
