@@ -11,7 +11,7 @@ from sklearn.metrics import confusion_matrix
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
-df = pd.read_csv('./../../data/wine.csv')
+df = pd.read_csv('./../../../data/wine.csv')
 X = df.iloc[:, 0:13].values
 y = df.iloc[:, 13].values
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
