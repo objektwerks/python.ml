@@ -6,12 +6,12 @@ Keras, Theano, TensorFlow and PyTorch.
 Virtual Environment
 -------------------
 1. python3.12 -m venv env
-2. source env/bin/activate
+2. source env/bin/activate ( rerun if pip needs to be upgraded )
 >See [VE Setup](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/)
 
 Install
 -------
-1. pip3 install scikit-learn
+1. pip3 install -U scikit-learn
 2. pip3 list
 3. pip3 freeze > requirements.txt
 
