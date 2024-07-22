@@ -3,7 +3,6 @@ Pandas features.
 """
 import pandas as pd
 
-# ./../../pandas.data.py
 ads = pd.read_csv('./../../data/ads.csv', index_col=0).dropna()
 print("Ads shape: ", ads.shape)
 print("Ads data:\n", ads.head(n=3))
