@@ -4,7 +4,7 @@ Apriori test on shopping data.
 import pandas as pd
 from apriorilib import apriori
 
-df = pd.read_csv('./../../data/shopping.csv', header=None)
+df = pd.read_csv('./../../../data/shopping.csv', header=None)
 baskets = []
 for i in range(0, 7501):
     baskets.append([str(df.values[i, j]) for j in range(0, 20)])
