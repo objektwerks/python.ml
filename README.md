@@ -9,6 +9,10 @@ Virtual Environment
 2. source env/bin/activate ( rerun if pip needs to be upgraded )
 >See [VE Setup](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/)
 
+PyCharm
+-------
+>See [VE Setup](https://www.jetbrains.com/help/pycharm/creating-virtual-environment.html#env-requirements)
+
 Install
 -------
 1. pip3 install -U scikit-learn
