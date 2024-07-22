@@ -16,7 +16,7 @@ plt.xlabel('Customers')
 plt.ylabel('Euclidean Distances')
 plt.show()
 
-hc = AgglomerativeClustering(n_clusters=5, affinity='euclidean', linkage='ward')
+hc = AgglomerativeClustering(n_clusters=5, linkage='ward')
 y_hc = hc.fit_predict(X)
 
 plt.scatter(X[y_hc == 0, 0], X[y_hc == 0, 1], s=100, c='red', label='Cluster 1')
