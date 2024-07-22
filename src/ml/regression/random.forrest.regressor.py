@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 from sklearn.ensemble import RandomForestRegressor
 
-df = pd.read_csv('./../../data/roles.salaries.csv')
+df = pd.read_csv('./../../../data/roles.salaries.csv')
 X = df.iloc[:, 1:2].values
 y = df.iloc[:, 2].values
 print("X shape / y shape: ", X.shape, y.shape)
