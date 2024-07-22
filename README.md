@@ -3,6 +3,10 @@ Python ML
 Python 3 machine and deep learning algo scripts using Scikit-learn, Pandas, Numpy, Matplotlib, Xgboost,
 Keras, Theano, TensorFlow, PyTorch and PySpark.
 
+Todo
+----
+1. Rewrite all file paths in scripts due to project restructuring!
+
 Virtual Env
 -----------
 1. python3.12 -m venv venv
