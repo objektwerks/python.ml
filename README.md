@@ -18,7 +18,7 @@ Install
 5. pip3 install keras
 6. pip3 install theano ( failed )
 7. pip3 install tensorflow
-8. pip3 install pytorch ( failed )
+8. pip3 install torch torchvision torchaudio
 9. pip3 list
 10. pip3 freeze > requirements.txt
 >**Note:** All modules can be installed via: ```pip3 install -r requirements.txt```
