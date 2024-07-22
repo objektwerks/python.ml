@@ -9,14 +9,14 @@ from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 
-df = pd.read_csv('./../../data/startups.csv')
+df = pd.read_csv('./../../../data/startups.csv')
 X = df.iloc[:, :-1].values
 y = df.iloc[:, 4].values
 
 state_encoder = LabelEncoder()
 X[:, 3] = state_encoder.fit_transform(X[:, 3])
 
-state_hot_encoder = OneHotEncoder(categorical_features=[3])
+state_hot_encoder = OneHotEncoder()
 X = state_hot_encoder.fit_transform(X).toarray()
 
 # Remove [dummy vars - 1] to avoid dummy var trap.
