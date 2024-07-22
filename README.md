@@ -46,7 +46,7 @@ PyCharm Run
 
 Notes
 -----
-1. Jupiter notebook ( src/nb/notebook.ipynb ) requires PyCharm Professional.
+1. Jupiter notebook ( ```src/nb/notebook.ipynb``` ) requires PyCharm Professional.
 
 Courses
 -------
