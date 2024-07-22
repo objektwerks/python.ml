@@ -10,7 +10,7 @@ Todo
 Virtual Env
 -----------
 1. python3.12 -m venv venv
-2. source env/bin/activate ( rerun if pip needs to be upgraded, again; don't ask me why )
+2. source env/bin/activate
 >See [VE Setup](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/)
 
 PyCharm Virtual Env
@@ -19,7 +19,7 @@ PyCharm Virtual Env
 
 Install
 -------
-1. pip3 install -U scikit-learn
+1. pip3 install scikit-learn
 2. pip3 install pandas
 3. pip3 install matplotlib
 4. pip3 install xgboost
