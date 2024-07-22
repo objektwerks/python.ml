@@ -7,13 +7,13 @@ import torch
 import torch.nn.parallel
 import torch.utils.data
 
-movies = pd.read_csv('./../data/movies/movies.dat', sep='::', header=None, engine='python', encoding='latin-1')
-users = pd.read_csv('./../data/movies/users.dat', sep='::', header=None, engine='python', encoding='latin-1')
-ratings = pd.read_csv('./../data/movies/ratings.dat', sep='::', header=None, engine='python', encoding='latin-1')
+movies = pd.read_csv('./../../data/movies/movies.dat', sep='::', header=None, engine='python', encoding='latin-1')
+users = pd.read_csv('./../../data/movies/users.dat', sep='::', header=None, engine='python', encoding='latin-1')
+ratings = pd.read_csv('./../../data/movies/ratings.dat', sep='::', header=None, engine='python', encoding='latin-1')
 
-training_set = pd.read_csv('./../data/movies/u1.base', delimiter='\t')
+training_set = pd.read_csv('./../../data/movies/u1.base', delimiter='\t')
 training_set = np.array(training_set, dtype='int')
-test_set = pd.read_csv('./../data/movies/u1.test', delimiter='\t')
+test_set = pd.read_csv('./../../data/movies/u1.test', delimiter='\t')
 test_set = np.array(test_set, dtype='int')
 
 nb_users = int(max(max(training_set[:, 0]), max(test_set[:, 0])))
