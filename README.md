@@ -17,7 +17,8 @@ Install
 4. pip3 install xgboost
 5. pip3 install keras
 6. pip3 install theano ( may fail )
-7. 
+7. pip3 install tensorflow
+8. 
 1. pip3 list
 2. pip3 freeze > requirements.txt
 
