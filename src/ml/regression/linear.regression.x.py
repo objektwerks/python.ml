@@ -42,18 +42,18 @@ plt.show()
 X = np.append(arr=np.ones((50, 1)).astype(int), values=X, axis=1)
 
 # Backward elimination by independent variable of P < 0.05.
-model_OLS = sm.OLS(endog=y, exog=X[:, [0, 1, 2, 3, 4, 5]]).fit()
+model_OLS = sm.ols(endog=y, exog=X[:, [0, 1, 2, 3, 4, 5]]).fit()
 print("OLS Summary [0, 1, 2, 3, 4, 5]\n", model_OLS.summary())
 
 # Removed Dummy variable.
-model_OLS = sm.OLS(endog=y, exog=X[:, [0, 1, 3, 4, 5]]).fit()
+model_OLS = sm.ols(endog=y, exog=X[:, [0, 1, 3, 4, 5]]).fit()
 print("OLS Summary [0, 1, 3, 4, 5]\n", model_OLS.summary())
 
 # Removed State variable.
-model_OLS = sm.OLS(endog=y, exog=X[:, [0, 3, 4, 5]]).fit()
+model_OLS = sm.ols(endog=y, exog=X[:, [0, 3, 4, 5]]).fit()
 print("OLS Summary [0, 3, 4, 5]\n", model_OLS.summary())
 
 # Removed Admin variable.
 # MarketingSpend and R&DSpend best predict Profit.
-model_OLS = sm.OLS(endog=y, exog=X[:, [0, 3, 5]]).fit()
+model_OLS = sm.ols(endog=y, exog=X[:, [0, 3, 5]]).fit()
 print("OLS Summary [0, 3, 5]\n", model_OLS.summary())
