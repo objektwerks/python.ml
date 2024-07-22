@@ -21,6 +21,7 @@ Install
 8. pip3 install pytorch ( failed )
 9. pip3 list
 10. pip3 freeze > requirements.txt
+>**Note:** All modules can be installed via: ```pip3 install -r requirements.txt```
 
 Courses
 -------
