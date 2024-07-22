@@ -13,8 +13,10 @@ Install
 -------
 1. pip3 install -U scikit-learn
 2. pip3 install pandas
-3. pip3 list
-4. pip3 freeze > requirements.txt
+3. pip3 install matplotlib
+
+1. pip3 list
+2. pip3 freeze > requirements.txt
 
 Courses
 -------
