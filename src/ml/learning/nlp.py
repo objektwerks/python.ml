@@ -12,7 +12,7 @@ from sklearn.metrics import confusion_matrix
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import GaussianNB
 
-df = pd.read_csv('./../../data/restaurant.reviews.tsv', delimiter='\t', quoting=3)
+df = pd.read_csv('./../../../data/restaurant.reviews.tsv', delimiter='\t', quoting=3)
 
 nltk.download('stopwords')
 corpus = []
