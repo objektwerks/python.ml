@@ -56,7 +56,7 @@ ML and DL scripts are based on these **Udemy** courses:
 
 Data
 ----
-All data is located in the data directory, less 1 dataset for dl/convolution.neural.network.py,
+All data is located in the data directory, less 1 dataset for ```src/dl/convolution.neural.network.py```,
 which contains instructions.
 
 Machine Learning
