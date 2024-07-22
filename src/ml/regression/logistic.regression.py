@@ -4,11 +4,10 @@ Logistic Regression test on purchases data.
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import Imputer
-from sklearn.preprocessing import OneHotEncoder, LabelEncoder
-from sklearn.preprocessing import StandardScaler
+from sklearn.utils import Imputer
+from sklearn.preprocessing import OneHotEncoder, LabelEncoder, StandardScaler
 
-df = pd.read_csv('./../../data/purchases.csv')
+df = pd.read_csv('./../../../data/purchases.csv')
 X = df.iloc[:, :-1].values
 y = df.iloc[:, 3].values
 print("X: ", X)
@@ -23,7 +22,7 @@ country_encoder = LabelEncoder()
 X[:, 0] = country_encoder.fit_transform(X[:, 0])
 print("X country label encoder:\n", X)
 
-country_hot_encoder = OneHotEncoder(categorical_features=[0])
+country_hot_encoder = OneHotEncoder()
 X = country_hot_encoder.fit_transform(X).toarray()
 print("X country hot encoder:\n", X)
 
