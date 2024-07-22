@@ -7,7 +7,7 @@ from pylab import bone, pcolor, colorbar, plot, show
 from sklearn.preprocessing import MinMaxScaler
 from somlib import MiniSom
 
-df = pd.read_csv('./../data/credit.card.apps.csv')
+df = pd.read_csv('./../../data/credit.card.apps.csv')
 X = df.iloc[:, :-1].values
 y = df.iloc[:, -1].values
 print("X shape / y shape: ", X.shape, y.shape)
