@@ -29,9 +29,10 @@ Install
 8. pip3 install torch torchvision torchaudio
 9. pip3 install pyspark
 10. pip3 install nltk
-11. pip3 seaborn
-12. pip3 list
-13. pip3 freeze > requirements.txt
+11. pip3 install seaborn
+12. pip3 install statsmodels
+13. pip3 list
+14. pip3 freeze > requirements.txt
 >**Note:** All modules can be installed via: ```pip3 install -r requirements.txt```
 
 Run
