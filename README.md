@@ -39,7 +39,7 @@ Run
 
 Notes
 -----
-1. Jupiter notebook required PyCharm Professional ( see: src/wb/workbook.ipynb )
+1. Jupiter notebook ( src/wb/workbook.ipynb ) requires PyCharm Professional.
 
 Courses
 -------
