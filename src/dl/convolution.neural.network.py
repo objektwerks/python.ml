@@ -16,7 +16,8 @@ Using TensorFlow backend.
 Found 8000 images belonging to 2 classes.
 Found 2000 images belonging to 2 classes.
 Epoch 1/10
-2018-01-21 15:27:56.977934: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.2 AVX
+2018-01-21 15:27:56.977934: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that
+this TensorFlow binary was not compiled to use: SSE4.2 AVX
  - 79s - loss: 0.6603 - acc: 0.5970 - val_loss: 0.5914 - val_acc: 0.7005
 Epoch 2/10
  - 77s - loss: 0.5902 - acc: 0.6815 - val_loss: 0.5421 - val_acc: 0.7360
@@ -40,12 +41,12 @@ objektwerks:dl objektwerks$
 
 Increase epochs for greater accuracy, requiring more processing time.
 """
-from keras.layers import Conv2D
-from keras.layers import Dense
-from keras.layers import Flatten
-from keras.layers import MaxPooling2D
-from keras.models import Sequential
-from keras.preprocessing.image import ImageDataGenerator
+from keras.api.layers import Conv2D
+from keras.api.layers import Dense
+from keras.api.layers import Flatten
+from keras.api.layers import MaxPooling2D
+from keras.api.models import Sequential
+from keras.api.preprocessing.image import ImageDataGenerator # Gone with Keras 3?
 
 train_datagen = ImageDataGenerator(rescale=1. / 255,
                                    shear_range=0.2,
