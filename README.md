@@ -1,7 +1,7 @@
 Python ML
 ---------
 Python 3 machine and deep learning algo scripts using Scikit-learn, Pandas, Numpy, Matplotlib, Xgboost,
-Keras, Theano, TensorFlow, PyTorch and PySpark.
+Keras, Theano, TensorFlow, PyTorch, PySpark and Seaborn.
 
 Todo
 ----
