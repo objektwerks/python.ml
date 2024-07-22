@@ -8,6 +8,8 @@ from warnings import warn
 from numpy import (array, unravel_index, nditer, linalg, random, subtract,
                    power, exp, pi, zeros, arange, outer, meshgrid, dot)
 
+from numpy.testing import assert_almost_equal, assert_array_almost_equal, assert_array_equal
+
 
 def fast_norm(x):
     """Returns norm-2 of a 1-D numpy array.
@@ -180,10 +182,6 @@ class MiniSom(object):
         for x in data:
             winmap[self.winner(x)].append(x)
         return winmap
-
-
-### unit tests
-from numpy.testing import assert_almost_equal, assert_array_almost_equal, assert_array_equal
 
 
 class TestMinisom:
