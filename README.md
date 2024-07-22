@@ -16,11 +16,11 @@ Install
 3. pip3 install matplotlib
 4. pip3 install xgboost
 5. pip3 install keras
-6. pip3 install theano ( may fail )
+6. pip3 install theano ( failed )
 7. pip3 install tensorflow
-8. 
-1. pip3 list
-2. pip3 freeze > requirements.txt
+8. pip3 install pytorch ( failed )
+9. pip3 list
+10. pip3 freeze > requirements.txt
 
 Courses
 -------
