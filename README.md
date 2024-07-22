@@ -37,8 +37,12 @@ Install
 
 Run
 ---
-* python3.12 src/pd/pandas.data.py ( or other script location )
-* right-click script > run
+1. cd src/**/*.py
+2. python3.12 *.py
+
+PyCharm Run
+-----------
+* right-click *.py > run
 
 Notes
 -----
