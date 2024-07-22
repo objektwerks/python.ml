@@ -9,7 +9,7 @@ from sklearn import metrics
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split, cross_val_score
 
-df = pd.read_csv('./../../data/ads.csv', index_col=0)
+df = pd.read_csv('./../../../data/ads.csv', index_col=0)
 print("Data shape: ", df.shape)
 print("Data:\n", df.head(n=3))
 
