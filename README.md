@@ -1,7 +1,7 @@
 Python ML
 ---------
 Python 3 machine and deep learning algo scripts using Scikit-learn, Pandas, Numpy, Matplotlib, Xgboost,
-Keras, Theano, TensorFlow and PyTorch.
+Keras, Theano, TensorFlow, PyTorch and PySpark.
 
 Virtual Env
 -----------
@@ -23,8 +23,9 @@ Install
 6. pip3 install theano ( failed )
 7. pip3 install tensorflow
 8. pip3 install torch torchvision torchaudio
-9. pip3 list
-10. pip3 freeze > requirements.txt
+9. pip3 install pyspark
+10. pip3 list
+11. pip3 freeze > requirements.txt
 >**Note:** All modules can be installed via: ```pip3 install -r requirements.txt```
 
 Run
