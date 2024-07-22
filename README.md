@@ -42,7 +42,7 @@ Run
 
 PyCharm Run
 -----------
-* right-click *.py > run
+1. right-click *.py > run
 
 Notes
 -----
