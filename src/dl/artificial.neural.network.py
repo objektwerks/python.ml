@@ -14,7 +14,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 from sklearn.preprocessing import StandardScaler
 
-df = pd.read_csv('./../data/churn.modeling.csv')
+df = pd.read_csv('./../../data/churn.modeling.csv')
 X = df.iloc[:, 3:13].values
 y = df.iloc[:, 13].values
 
@@ -22,7 +22,7 @@ labelencoder_X_1 = LabelEncoder()
 X[:, 1] = labelencoder_X_1.fit_transform(X[:, 1])
 labelencoder_X_2 = LabelEncoder()
 X[:, 2] = labelencoder_X_2.fit_transform(X[:, 2])
-onehotencoder = OneHotEncoder(categorical_features=[1])
+onehotencoder = OneHotEncoder()
 X = onehotencoder.fit_transform(X).toarray()
 X = X[:, 1:]
 
