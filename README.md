@@ -37,7 +37,7 @@ Install
 
 Run
 ---
-* python3.12 pd/pandas.data.py ( or other script location )
+* python3.12 src/pd/pandas.data.py ( or other script location )
 * right-click script > run
 
 Notes
