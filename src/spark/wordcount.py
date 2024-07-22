@@ -8,7 +8,7 @@ sparkSession = SparkSession.builder.master("local[*]").appName("wordcount").getO
 text = sparkSession.read.text("LICENSE").rdd.cache()
 
 lines = text.map(lambda r: r[0])
-counts = lines.flatMap(lambda l: l.split(' ')).map(lambda w: (w, 1)).reduceByKey(add)
+counts = lines.flatMap(lambda line: line.split(' ')).map(lambda w: (w, 1)).reduceByKey(add)
 words = counts.collect()
 for (word, count) in words:
     print("%s: %i" % (word, count))
