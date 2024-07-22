@@ -15,9 +15,9 @@ from sklearn.metrics import confusion_matrix
 from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
-from xgboost import XGBClassifier
+from xgboost import XGBClassifier # missing import!
 
-df = pd.read_csv('./../../data/churn.modeling.csv')
+df = pd.read_csv('./../../../data/churn.modeling.csv')
 X = df.iloc[:, 3:13].values
 y = df.iloc[:, 13].values
 
