@@ -9,7 +9,6 @@ __pycache__/
 # Distribution / packaging
 .Python
 env/
-venv/
 build/
 develop-eggs/
 dist/
@@ -107,3 +106,5 @@ python.ml.iml
 
 # Deep Learning Dataset ( Too Large )
 dataset/
+
+.DS_Store
