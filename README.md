@@ -11,9 +11,9 @@ Virtual Env
 -----------
 1. python3.12 -m venv venv
 2. source venv/bin/activate
-3. pip list
-4. pip install --upgrade pip ( optional )
-5. pip freeze > requirements.txt ( optional )
+3. pip3 list
+4. pip3 install --upgrade pip ( optional )
+5. pip3 freeze > requirements.txt ( optional )
 >See [VE Setup](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/)
 
 PyCharm Virtual Env
