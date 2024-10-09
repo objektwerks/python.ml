@@ -9,7 +9,7 @@ Todo
 
 Virtual Env
 -----------
-1. python3.12 -m venv venv
+1. python3.13 -m venv venv
 2. source venv/bin/activate
 3. pip3 list
 4. pip3 install --upgrade pip ( optional )
@@ -41,7 +41,7 @@ Install
 Run
 ---
 1. cd src/**/*.py
-2. python3.12 *.py
+2. python3.13 *.py
 
 PyCharm Run
 -----------
