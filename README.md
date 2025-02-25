@@ -62,6 +62,28 @@ will be ignored; use `--active` to target the active environment instead.
 >Other UV errors may popup as well. UV is still a work in progress. You may go
 >thru several ***variations*** of this conversion process before you succeed.
 
+Install Dependency
+------------------
+>To install a dependency:
+1. pip3 install ***dependency***
+2. pip3 freeze > requirements.txt
+>or:
+1. uv add "dependency"
+
+Install Dependencies
+--------------------
+>To install dependencies in **requirements.txt**:
+1. pip3 install -r requirements.txt
+>or:
+1. uv add -r requirements.txt
+
+Upgrade Dependencies
+--------------------
+>To upgrade dependencies in **requirements.txt**:
+1. pip3 install --upgrade -r requirements.txt
+>or:
+1. uv sync
+
 Run
 ---
 1. python3.13 src/**/*.py
