@@ -63,7 +63,7 @@ Grid Search, XGBoost
 
 Deep Learning
 -------------
-The following DL algos are tested:
+>The following DL algos are tested:
 
 **Neural Networks:** Artificial, Convolution, Self Organizing Map, Boltzmann Machine, Autoencoder, Recurrent
 
