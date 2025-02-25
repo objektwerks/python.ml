@@ -25,6 +25,10 @@ Install
 5. pip3 freeze > requirements.txt
 >**Note:** All modules can be installed via: ```pip3 install -r requirements.txt```
 
+Repository
+----------
+* [PyPi](https://pypi.org/)
+
 Run
 ---
 1. python3.13 src/**/*.py
