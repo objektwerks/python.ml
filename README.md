@@ -88,9 +88,9 @@ Run
 ---
 1. python3.13 src/**/*.py
 
-Notes
------
-1. Jupiter notebook ( ```src/nb/notebook.ipynb``` ) requires PyCharm Professional.
+Note
+----
+* Jupiter notebook ( ```src/nb/notebook.ipynb``` ) requires PyCharm Professional.
 
 Courses
 -------
