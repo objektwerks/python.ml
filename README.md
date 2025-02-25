@@ -35,7 +35,7 @@ Notes
 
 Courses
 -------
-ML and DL scripts are based on these **Udemy** courses:
+>ML and DL scripts are based on these **Udemy** courses:
   1. Machine Learning A-Z: Hands-on Python & R in Data Science
   2. Deep Learning A-Z: Hands-on Artificial Neural Networks
 
