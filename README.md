@@ -27,20 +27,14 @@ Virtual Env
 -----------
 1. python3.13 -m venv venv
 2. source venv/bin/activate
-3. pip3 list
-4. pip3 install --upgrade pip ( optional )
-5. pip3 freeze > requirements.txt ( optional )
+3. pip3 install --upgrade pip
+4. pip3 install scikit-learn, pandas, matplotlib, xgboost, keras, torch, torchvision, torchaudio, nltk, seaborn, statsmodels
+5. pip3 install tensorflow ( may fail )
+6. pip3 install theano ( may fail )
+7. pip3 install pyspark
+8. pip3 list
+9. pip3 freeze > requirements.txt ( optional )
 >See [VE Setup](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/)
-
-Install
--------
-1. pip3 install scikit-learn, pandas, matplotlib, xgboost, keras, torch, torchvision, torchaudio, nltk, seaborn, statsmodels
-2. pip3 install tensorflow ( may fail )
-3. pip3 install theano ( may fail )
-4. pip3 install pyspark
-5. pip3 list
-6. pip3 freeze > requirements.txt
->**Note:** All modules can be installed via: ```pip3 install -r requirements.txt```
 
 Convert to UV
 -------------
