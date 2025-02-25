@@ -27,12 +27,7 @@ Install
 
 Run
 ---
-1. cd src/**/*.py
-2. python3.13 *.py
-
-PyCharm Run
------------
-1. right-click *.py > run
+1. python3.13 src/**/*.py
 
 Notes
 -----
