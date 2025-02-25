@@ -65,6 +65,6 @@ Deep Learning
 -------------
 >The following DL algos are tested:
 
-**Neural Networks:** Artificial, Convolution, Self Organizing Map, Boltzmann Machine, Autoencoder, Recurrent
+>**Neural Networks:** Artificial, Convolution, Self Organizing Map, Boltzmann Machine, Autoencoder, Recurrent
 
-**Libraries:** Keras, Theano, TensorFlow, PyTorch
+>**Libraries:** Keras, Theano, TensorFlow, PyTorch
