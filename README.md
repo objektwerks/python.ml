@@ -16,10 +16,6 @@ Virtual Env
 5. pip3 freeze > requirements.txt ( optional )
 >See [VE Setup](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/)
 
-PyCharm Virtual Env
--------------------
->See [VE Setup](https://www.jetbrains.com/help/pycharm/creating-virtual-environment.html#env-requirements)
-
 Install
 -------
 1. pip3 install scikit-learn
