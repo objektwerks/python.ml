@@ -63,9 +63,9 @@ Install Dependency
 Install Dependencies
 --------------------
 >To install dependencies in **requirements.txt**:
-1. pip3 install -r requirements.txt
+1. pip3 install dependency-1, dependency-2
 >or:
-1. uv add -r requirements.txt
+1. uv add -r 'dependency-1' 'dependency-2'
 
 Upgrade Dependencies
 --------------------
