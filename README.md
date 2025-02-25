@@ -75,9 +75,9 @@ Run
 >or:
 1. uv run ./src/**/*.py
 
-Note
-----
-* Jupiter notebook ( ```src/nb/notebook.ipynb``` ) requires PyCharm Professional.
+Notes
+-----
+1. Jupiter notebook ( ```src/nb/notebook.ipynb``` ) requires PyCharm Professional.
 
 Courses
 -------
