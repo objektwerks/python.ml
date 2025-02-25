@@ -62,7 +62,7 @@ Install Dependency
 
 Install Dependencies
 --------------------
->To install dependencies in **requirements.txt**:
+>To install dependencies:
 1. pip3 install dependency-1, dependency-2
 >or:
 1. uv add -r 'dependency-1' 'dependency-2'
