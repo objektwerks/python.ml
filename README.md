@@ -45,7 +45,7 @@ Data
 
 Machine Learning
 ----------------
-The following ML algos are tested:
+>The following ML algos are tested:
 
 **Regression:** Linear, Logistic, Polynomial, Decision Tree, Random Forrest, Support Vector
 
