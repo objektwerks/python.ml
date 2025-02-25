@@ -70,7 +70,7 @@ Upgrade Dependencies
 
 Run
 ---
->To run a script, replace *.py with a source file name:
+>To run a script, replace *.py with a py script file name:
 1. python3.13 ./src/**/*.py
 >or:
 1. uv run ./src/**/*.py
