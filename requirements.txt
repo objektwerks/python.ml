@@ -53,9 +53,6 @@ setuptools==71.1.0
 six==1.16.0
 statsmodels==0.14.2
 sympy==1.13.1
-tensorboard==2.17.0
-tensorboard-data-server==0.7.2
-tensorflow==2.17.0
 termcolor==2.4.0
 threadpoolctl==3.5.0
 torch==2.3.1
