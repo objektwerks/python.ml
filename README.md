@@ -5,7 +5,7 @@ Keras, Theano, TensorFlow, PyTorch, PySpark, Seaborn and Statsmodels.
 
 Todo
 ----
-1. After 6+ years of change in the Python / ML space, each script needs to be retested.
+1. After 6+ years of change in the Python / ML space, each script needs to be revisited.
 
 Virtual Env
 -----------
