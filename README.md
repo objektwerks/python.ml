@@ -23,7 +23,7 @@ Virtual Env
 Install
 -------
 1. pip3 install scikit-learn, pandas, matplotlib, xgboost, keras, torch, torchvision, torchaudio, nltk, seaborn, statsmodels
-2. pip3 install tensorflow ( will fail for python 3.13 )
+2. pip3 install tensorflow ( may fail )
 3. pip3 install theano ( may fail )
 4. pip3 install pyspark
 5. pip3 list
