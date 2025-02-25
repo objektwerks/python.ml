@@ -47,19 +47,19 @@ Machine Learning
 ----------------
 >The following ML algos are tested:
 
-**Regression:** Linear, Logistic, Polynomial, Decision Tree, Random Forrest, Support Vector
+>**Regression:** Linear, Logistic, Polynomial, Decision Tree, Random Forrest, Support Vector
 
-**Classification:** Naive Bayes, Linear Support Vector Machine, Gaussian RBF Support Vector Machine,
+>**Classification:** Naive Bayes, Linear Support Vector Machine, Gaussian RBF Support Vector Machine,
 K-Nearest Neighbors, Decision Tree, Random Forrest, Logistic Regression, K-Fold Cross Validation,
 Grid Search, XGBoost
 
-**Clustering:** K-Means, Hierarchical
+>**Clustering:** K-Means, Hierarchical
 
-**Learning:** Apriori, Eclat, Upper Confidence Bound (UCB), Thompson Sampling, Natural Language Processing (NLP)
+>**Learning:** Apriori, Eclat, Upper Confidence Bound (UCB), Thompson Sampling, Natural Language Processing (NLP)
 
-**Reduction:** Principal Component Analysis (PCA), Linear Discriminant Analysis (LDA), Kernel Principal Component Analysis (PCA)
+>**Reduction:** Principal Component Analysis (PCA), Linear Discriminant Analysis (LDA), Kernel Principal Component Analysis (PCA)
 
-**Libraries:** Scikit-learn, Pandas, Numpy, Matplotlib, Xgboost
+>**Libraries:** Scikit-learn, Pandas, Numpy, Matplotlib, Xgboost
 
 Deep Learning
 -------------
