@@ -3,6 +3,10 @@ Python ML
 >Python 3 machine and deep learning algo scripts using Scikit-learn, Pandas, Numpy, Matplotlib, Xgboost,
 >Keras, Theano, TensorFlow, PyTorch, PySpark, Seaborn and Statsmodels.
 
+News
+----
+1. [2025.2.25] Converted this pip project to uv.
+
 Todo
 ----
 1. After 6+ years of change in the Python / ML space, each script needs to be revisited.
