@@ -39,6 +39,29 @@ Development
 5. Install [VSCode](https://code.visualstudio.com/)
 6. Install VSCode Python Microsoft Extensions: Python, Python Debugger, Pylance
 
+Convert to UV
+-------------
+>To install:
+1. brew install pipx
+2. pipx install uv ( a global ```brew install uv``` works, yet appears to fail at the project level )
+>To convert:
+1. uv init
+2. uv add -r requirements.txt
+3. uv sync
+>***Optional*** if virtual env errors occur:
+1. deactivate
+2. rm -rf .venv ***or*** rm -rf venv
+3. uv venv
+4. source venv/bin/activate
+5. uv pip freeze > requirements.txt
+>The following warning can occur:
+```
+VIRTUAL_ENV = venv does not match the project environment path `.venv` and
+will be ignored; use `--active` to target the active environment instead.
+```
+>Other UV errors may popup as well. UV is still a work in progress. You may go
+>thru several ***variations*** of this conversion process before you succeed.
+
 Run
 ---
 1. python3.13 src/**/*.py
