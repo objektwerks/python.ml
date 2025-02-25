@@ -18,11 +18,12 @@ Virtual Env
 
 Install
 -------
-1. pip3 install scikit-learn, pandas, matplotlib, xgboost, keras, tensorflow, torch, torchvision, torchaudio, nltk, seaborn, statsmodels
-2. pip3 install theano ( may fail )
-3. pip3 install pyspark
-4. pip3 list
-5. pip3 freeze > requirements.txt
+1. pip3 install scikit-learn, pandas, matplotlib, xgboost, keras, torch, torchvision, torchaudio, nltk, seaborn, statsmodels
+2. pip3 install tensorflow ( will fail for python 3.13 )
+3. pip3 install theano ( may fail )
+4. pip3 install pyspark
+5. pip3 list
+6. pip3 freeze > requirements.txt
 >**Note:** All modules can be installed via: ```pip3 install -r requirements.txt```
 
 Repository
