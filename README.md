@@ -11,6 +11,18 @@ Todo
 ----
 1. After 6+ years of change in the Python / ML space, each script needs to be revisited.
 
+Repository
+----------
+* [PyPi](https://pypi.org/)
+
+Development
+-----------
+>To install a Python development environment:
+1. Install [Homebrew](https://brew.sh/)
+2. brew install python@3.13
+3. Install [VSCode](https://code.visualstudio.com/)
+4. Install VSCode Python Microsoft Extensions: Python, Python Debugger, Pylance
+
 Virtual Env
 -----------
 1. python3.13 -m venv venv
@@ -29,18 +41,6 @@ Install
 5. pip3 list
 6. pip3 freeze > requirements.txt
 >**Note:** All modules can be installed via: ```pip3 install -r requirements.txt```
-
-Repository
-----------
-* [PyPi](https://pypi.org/)
-
-Development
------------
->To install a Python development environment:
-1. Install [Homebrew](https://brew.sh/)
-2. brew install python@3.13
-3. Install [VSCode](https://code.visualstudio.com/)
-4. Install VSCode Python Microsoft Extensions: Python, Python Debugger, Pylance
 
 Convert to UV
 -------------
