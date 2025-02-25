@@ -33,7 +33,7 @@ Virtual Env
 6. pip3 install theano ( may fail )
 7. pip3 install pyspark
 8. pip3 list
-9. pip3 freeze > requirements.txt ( optional )
+9. pip3 freeze > requirements.txt
 >**Torch** and **Tensorflow** only support Python 3.12. See [VE Setup](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/)
 
 Convert to UV
