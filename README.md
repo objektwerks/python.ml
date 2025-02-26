@@ -69,6 +69,10 @@ Upgrade Dependencies
 >or:
 1. uv sync
 
+Mypy
+----
+1. mypy mypy ./src/**/*.py
+
 Run
 ---
 >To run a script, replace *.py with a py script file name:
