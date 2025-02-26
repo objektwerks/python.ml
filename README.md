@@ -7,9 +7,9 @@ News
 ----
 1. [2025.2.25] Converted this pip project to uv.
 
-Todo
-----
-1. After 6+ years of change in the Python / ML space, each script needs to be revisited.
+Issues
+------
+1. Mypy produces several - ***Cannot find implementation or library stub for module named x*** - errors.
 
 Repository
 ----------
