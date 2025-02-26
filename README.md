@@ -9,7 +9,7 @@ News
 
 Issues
 ------
-1. Mypy produces several - ***Cannot find implementation or library stub for module named x*** - errors.
+1. [2025.2.26] Mypy produces several - ***Cannot find implementation or library stub for module named ...*** - errors.
 
 Repository
 ----------
